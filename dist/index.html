@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denis Havranek</title>
+<meta name="description" content="Denis Havranek is a Prague-based hands-on technical lead and full-stack engineer with 14+ years of experience, strongest in Angular, React, Next.js, TypeScript and Node, with team leadership up to 15 people and enterprise, fintech and health-insurance domain experience. Since 2023 he uses AI coding agents daily in a governed, human-in-the-loop way and co-founded BridgeOS around that practice. Currently full-time on an AI movie studio and consulting for a Boston fintech. Open to technical lead or senior front-end roles, AI-delivery consulting, co-building products, or a thirty-minute conversation. Languages: Spanish and Czech native, English fluent.">
+<link rel="alternate" type="application/json" href="/profile.json" title="Machine-readable profile">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,500;12..96,75..100,600;12..96,75..100,800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>/* Story-profile. Faces: Bricolage Grotesque (display + reading, optical sizing) and Courier Prime (slug lines, data, agent block).
+   Scale 1.25 on 18px. Unit 8px. Light first; dark rebuilt, not inverted. */
+:root{
+  --paper:oklch(0.975 0.005 95);
+  --paper-2:oklch(0.945 0.008 95);
+  --ink:oklch(0.21 0.02 260);
+  --ink-2:oklch(0.42 0.02 260);
+  --ink-3:oklch(0.58 0.015 260);
+  --line:oklch(0.86 0.01 95);
+  --line-strong:oklch(0.21 0.02 260);
+  --accent:oklch(0.58 0.2 30);
+  --accent-ink:oklch(0.99 0 0);
+  --accent-soft:oklch(0.94 0.04 30);
+  --sans:"Bricolage Grotesque",system-ui,-apple-system,"Helvetica Neue",sans-serif;
+  --mono:"Courier Prime","Courier New",Courier,monospace;
+  --s1:8px;--s2:16px;--s3:24px;--s4:32px;--s6:48px;--s8:64px;--s12:96px;--s16:128px;
+  --dur:420ms;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:oklch(0.17 0.012 260);--paper-2:oklch(0.21 0.014 260);
+  --ink:oklch(0.94 0.008 95);--ink-2:oklch(0.76 0.01 95);--ink-3:oklch(0.6 0.012 95);
+  --line:oklch(0.3 0.015 260);--line-strong:oklch(0.94 0.008 95);
+  --accent:oklch(0.74 0.16 35);--accent-ink:oklch(0.17 0.012 260);--accent-soft:oklch(0.27 0.04 35);
+}}
+:root[data-theme="dark"]{
+  --paper:oklch(0.17 0.012 260);--paper-2:oklch(0.21 0.014 260);
+  --ink:oklch(0.94 0.008 95);--ink-2:oklch(0.76 0.01 95);--ink-3:oklch(0.6 0.012 95);
+  --line:oklch(0.3 0.015 260);--line-strong:oklch(0.94 0.008 95);
+  --accent:oklch(0.74 0.16 35);--accent-ink:oklch(0.17 0.012 260);--accent-soft:oklch(0.27 0.04 35);
+}
+
+*{box-sizing:border-box}
+html{font-size:18px;-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--s8)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-optical-sizing:auto;line-height:1.55;font-feature-settings:"kern","liga","calt"}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:var(--accent)}
+a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
+h1,h2,h3,h4{margin:0;font-weight:600;line-height:1.05;letter-spacing:-0.02em;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+
+.slug{font-family:var(--mono);font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-2)}
+.slug b{color:var(--accent);font-weight:400}
+.mono{font-family:var(--mono)}
+.small{font-size:0.85rem;color:var(--ink-2)}
+.prose{max-width:62ch;font-size:1.05rem;line-height:1.6}
+.prose+.prose{margin-top:var(--s2)}
+
+/* ----- frame: rail + page ----- */
+.frame{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:var(--s8);max-width:78rem;margin:0 auto;padding:0 var(--s4)}
+.rail{position:sticky;top:0;align-self:start;height:100vh;padding:var(--s4) 0;display:flex;flex-direction:column;gap:var(--s4)}
+.rail .brand{font-weight:700;letter-spacing:-0.02em;text-decoration:none;font-size:1.05rem}
+.rail nav{display:flex;flex-direction:column}
+.rail nav a{font-family:var(--mono);font-size:0.78rem;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;color:var(--ink-2);padding:6px 0;display:flex;gap:var(--s1);align-items:baseline;min-height:32px}
+.rail nav a::before{content:attr(data-n);color:var(--ink-3);width:1.6em}
+.rail nav a:hover,.rail nav a[aria-current]{color:var(--ink)}
+.rail nav a[aria-current]::before{color:var(--accent)}
+.now{margin-top:auto;border-top:1px solid var(--line);padding-top:var(--s2);font-size:0.85rem;color:var(--ink-2);line-height:1.45}
+.now .clock{font-family:var(--mono);font-size:1.6rem;color:var(--ink);letter-spacing:-0.02em;font-variant-numeric:tabular-nums;line-height:1.1}
+.page{min-width:0;padding-bottom:var(--s16)}
+section{padding-top:var(--s12)}
+.sec-head{display:flex;align-items:baseline;gap:var(--s3);border-top:1px solid var(--line-strong);padding-top:var(--s2);margin-bottom:var(--s6)}
+.sec-head h2{font-size:2.4rem;flex:1}
+.sec-head .slug{white-space:nowrap}
+
+/* ----- hero ----- */
+.hero{padding:var(--s12) 0 var(--s8);border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(3.4rem,9vw,7.5rem);font-weight:800;letter-spacing:-0.045em;line-height:0.92;margin:var(--s3) 0 var(--s4);font-variation-settings:"wdth" 90}
+.hero h1 .dot{color:var(--accent)}
+.hero .lede{font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.3;letter-spacing:-0.015em;max-width:30ch;font-weight:500;text-wrap:pretty}
+.hero .meta{margin-top:var(--s4);display:flex;flex-wrap:wrap;gap:var(--s1) var(--s3);font-family:var(--mono);font-size:0.8rem;color:var(--ink-2)}
+.hero .meta a{text-decoration:none;border-bottom:1px solid var(--line)}
+.hero .meta a:hover{border-color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){
+  .rise{animation:rise var(--dur) cubic-bezier(.2,.7,.2,1) both}
+  .rise:nth-child(2){animation-delay:80ms}.rise:nth-child(3){animation-delay:160ms}.rise:nth-child(4){animation-delay:240ms}
+  @keyframes rise{from{opacity:.001;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+
+/* ----- person ----- */
+.values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line);margin:var(--s6) 0}
+.values li{padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid var(--line)}
+.values li:nth-child(odd){border-right:1px solid var(--line);padding-right:var(--s4)}
+.values li:nth-child(even){padding-left:var(--s4)}
+.values h3{font-size:1.3rem;margin-bottom:var(--s1)}
+.values p{color:var(--ink-2);text-wrap:pretty}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s6);margin:var(--s6) 0}
+.split h3{font-size:0.78rem;font-family:var(--mono);font-weight:400;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-2);margin-bottom:var(--s2)}
+.marks li{padding:8px 0 8px 1.4em;border-top:1px solid var(--line);position:relative;text-wrap:pretty}
+.marks li::before{position:absolute;left:0;font-family:var(--mono);color:var(--accent)}
+.marks.plus li::before{content:"+"}
+.marks.minus li::before{content:"–"}
+.manual{border-top:1px solid var(--line-strong)}
+.manual .row{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:var(--s3);padding:var(--s2) 0;border-bottom:1px solid var(--line)}
+.manual dt{font-family:var(--mono);font-size:0.8rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--ink-2);padding-top:3px}
+.manual dd{margin:0;text-wrap:pretty}
+
+/* ----- timeline: acts ----- */
+.acts{counter-reset:act}
+.act{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:var(--s4);padding:var(--s6) 0;border-top:1px solid var(--line);counter-increment:act}
+.act:first-child{border-top:0;padding-top:0}
+.act .years{font-family:var(--mono);line-height:1.15;font-variant-numeric:tabular-nums}
+.act .years .from{font-size:1.9rem;letter-spacing:-0.03em;display:block}
+.act .years .to{color:var(--ink-3);font-size:0.85rem;display:block;margin-top:2px}
+.act .years .n{display:block;color:var(--accent);font-size:0.75rem;letter-spacing:0.08em;margin-top:var(--s2)}
+.act .years .n::before{content:"ACT " counter(act,upper-roman)}
+.act h3{font-size:1.75rem;margin-bottom:6px;font-variation-settings:"wdth" 95}
+.act .where{font-family:var(--mono);font-size:0.8rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:var(--s3)}
+.act .chapter{max-width:62ch;text-wrap:pretty;color:var(--ink)}
+.act .world{margin-top:var(--s3);max-width:62ch;background:var(--paper-2);padding:var(--s2) var(--s3);border-left:3px solid var(--accent)}
+.act .world .slug{display:block;margin-bottom:4px}
+.act .world p{color:var(--ink-2);font-size:0.95rem;text-wrap:pretty}
+
+/* ----- call sheet ----- */
+.sheet-wrap{overflow-x:auto}
+.sheet{width:100%;border-collapse:collapse;font-size:0.95rem}
+.sheet th{font-family:var(--mono);font-weight:400;font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-2);text-align:left;padding:0 var(--s2) var(--s1) 0;border-bottom:1px solid var(--line-strong)}
+.sheet td{padding:14px var(--s2) 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.sheet td.name{font-weight:600;white-space:nowrap;letter-spacing:-0.01em}
+.sheet td.tag{font-family:var(--mono);font-size:0.78rem;color:var(--ink-2);white-space:nowrap;text-transform:uppercase;letter-spacing:0.04em}
+.sheet td.one{color:var(--ink-2);min-width:22rem;text-wrap:pretty}
+.sheet td.status{font-family:var(--mono);font-size:0.78rem;white-space:nowrap}
+.sheet td.status::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px;opacity:.9}
+.sheet tr[data-live="0"] td.status::before{background:var(--ink-3)}
+.sheet tbody tr:hover td{background:var(--paper-2)}
+.toolbox{margin-top:var(--s8)}
+.toolbox .manual .row{grid-template-columns:11rem minmax(0,1fr)}
+
+/* ----- voices ----- */
+.voices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s6) var(--s8)}
+.voices blockquote{margin:0;font-size:1.35rem;line-height:1.3;letter-spacing:-0.015em;font-weight:500;text-indent:-0.45em;text-wrap:pretty}
+.voices blockquote::before{content:"\201C";color:var(--accent)}
+.voices blockquote::after{content:"\201D";color:var(--accent)}
+.voices .who{margin-top:var(--s2);font-family:var(--mono);font-size:0.78rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:0.04em}
+
+/* ----- into / together ----- */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s4) var(--s4)}
+.cards li{border-top:1px solid var(--line-strong);padding-top:var(--s2)}
+.cards h3{font-size:1.15rem;margin-bottom:6px}
+.cards p{color:var(--ink-2);font-size:0.95rem;text-wrap:pretty}
+.cta{margin-top:var(--s6);display:flex;gap:var(--s3);align-items:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 var(--s3);background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;letter-spacing:-0.01em;border-radius:3px;transition:background .18s ease}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+
+/* ----- agents: terminal ----- */
+.term{background:var(--ink);color:var(--paper);border-radius:6px;padding:var(--s4);font-family:var(--mono);font-size:0.9rem;line-height:1.6;overflow-x:auto}
+.term .cmd{color:var(--accent)}
+.term .cmd::before{content:"$ ";opacity:.6}
+.term .out{white-space:pre-wrap;color:var(--paper);opacity:.92;max-width:78ch}
+.term .k{opacity:.6}
+.term a{color:var(--paper);text-decoration-color:var(--accent)}
+:root[data-theme="dark"] .term,.dark-auto .term{background:var(--paper-2);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .term{background:var(--paper-2);color:var(--ink)}:root:not([data-theme="light"]) .term .out,:root:not([data-theme="light"]) .term a{color:var(--ink)}}
+.fit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s6);margin-top:var(--s6)}
+
+footer{border-top:1px solid var(--line);padding:var(--s3) 0;font-family:var(--mono);font-size:0.78rem;color:var(--ink-3);display:flex;justify-content:space-between;gap:var(--s2);flex-wrap:wrap}
+
+/* draft markers while profile.json still has todo:true */
+[data-draft]{outline:1px dashed var(--accent);outline-offset:8px;border-radius:2px}
+[data-draft]::before{content:"draft · fill in profile.json";grid-column:1/-1;font-family:var(--mono);font-size:0.7rem;color:var(--accent);display:block;margin-bottom:4px}
+
+@media (max-width:64rem){
+  .frame{grid-template-columns:1fr;gap:0}
+  .rail{position:sticky;height:auto;padding:var(--s2) 0;flex-direction:row;align-items:center;gap:var(--s3);background:color-mix(in oklch,var(--paper) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:3}
+  .rail nav{flex-direction:row;gap:var(--s2);overflow-x:auto;flex:1}
+  .rail nav a{white-space:nowrap;min-height:44px}
+  .rail nav a::before{display:none}
+  .now{display:none}
+}
+@media (max-width:48rem){
+  html{font-size:17px}
+  .frame{padding:0 var(--s3)}
+  .values,.split,.voices,.cards,.fit{grid-template-columns:1fr}
+  .values li:nth-child(odd){border-right:0;padding-right:0}.values li:nth-child(even){padding-left:0}
+  .manual .row,.toolbox .manual .row{grid-template-columns:1fr;gap:4px}
+  .act{grid-template-columns:1fr;gap:var(--s2)}
+  .act .years{display:flex;gap:var(--s2);align-items:baseline}
+  .act .years .from{font-size:1.4rem}.act .years .n{margin:0}
+  .sec-head{flex-direction:column;gap:var(--s1)}
+  .sec-head h2{font-size:1.9rem}
+}
+
+/* ----- images and placeholders ----- */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 13rem;gap:var(--s6);align-items:start}
+.frame-img{margin:0;aspect-ratio:16/10;background:var(--paper-2);overflow:hidden;border-radius:3px;position:relative}
+.frame-img img{width:100%;height:100%;object-fit:cover;display:block}
+.frame-img.portrait{aspect-ratio:4/5;filter:grayscale(1) contrast(1.05)}
+.frame-img.portrait:hover{filter:none}
+.frame-img.ph{display:flex;flex-direction:column;justify-content:flex-end;padding:var(--s2);border:1px dashed var(--ink-3);background:
+  repeating-linear-gradient(-45deg,transparent 0 10px,color-mix(in oklch,var(--ink-3) 18%,transparent) 10px 11px),var(--paper-2)}
+.frame-img.ph .ph-l{font-weight:600;letter-spacing:-0.01em;line-height:1.2}
+.frame-img.ph .ph-p{font-family:var(--mono);font-size:0.72rem;color:var(--ink-2);margin-top:4px;word-break:break-all}
+.frame-img.ph::before{content:"IMAGE";position:absolute;top:var(--s2);left:var(--s2);font-family:var(--mono);font-size:0.7rem;letter-spacing:0.1em;color:var(--accent)}
+.shows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s6) var(--s4)}
+.show-b{padding-top:var(--s2)}
+.show-h{display:flex;justify-content:space-between;gap:var(--s2);align-items:baseline;margin-bottom:6px}
+.show h3{font-size:1.2rem}
+.show .tag{font-family:var(--mono);font-size:0.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:0.05em;white-space:nowrap}
+.show p{color:var(--ink-2);font-size:0.95rem;text-wrap:pretty}
+.show .status{font-family:var(--mono);font-size:0.78rem;color:var(--ink);margin-top:8px}
+.show .status::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px}
+.show[data-live="0"] .status::before{background:var(--ink-3)}
+.show .frame-img{transition:transform var(--dur) cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:no-preference){.show:hover .frame-img{transform:translateY(-3px)}}
+@media (max-width:64rem){.shows{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:48rem){.shows{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr}.frame-img.portrait{max-width:14rem}}
+
+/* ----- project decks: full-screen slider ----- */
+.show-open{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;text-align:left;color:inherit;font:inherit}
+.show-open .frame-img{transition:transform var(--dur) cubic-bezier(.2,.7,.2,1),box-shadow var(--dur)}
+.show-open:hover .frame-img{box-shadow:0 12px 32px -16px color-mix(in oklch,var(--ink) 45%,transparent)}
+.show-open::after{content:"Open deck →";display:inline-block;margin-top:8px;font-family:var(--mono);font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);opacity:0;transition:opacity .2s}
+.show-open:hover::after,.show-open:focus-visible::after{opacity:1}
+.deck{width:100vw;height:100vh;max-width:100vw;max-height:100vh;margin:0;padding:0;border:0;background:var(--paper);color:var(--ink);inset:0;overflow:hidden;display:none;flex-direction:column}
+.deck[open]{display:flex}
+.deck::backdrop{background:color-mix(in oklch,var(--ink) 70%,transparent)}
+.deck-bar{display:flex;justify-content:space-between;align-items:center;padding:var(--s2) var(--s4);border-bottom:1px solid var(--line)}
+.deck-x{font:inherit;font-family:var(--mono);font-size:0.8rem;letter-spacing:0.05em;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 14px;border-radius:3px;cursor:pointer;min-height:44px}
+.deck-x:hover{border-color:var(--accent);color:var(--accent)}
+.track{flex:1;display:flex;min-height:0;transition:transform var(--dur) cubic-bezier(.2,.7,.2,1);will-change:transform}
+@media (prefers-reduced-motion:reduce){.track{transition:none}}
+.slide{flex:0 0 100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s8);align-items:center;padding:var(--s6) var(--s8);min-height:0;overflow:auto}
+.slide .s-text{max-width:56ch}
+.slide h3{font-size:clamp(2.4rem,6vw,5rem);letter-spacing:-0.04em;font-weight:800;line-height:0.95;margin:var(--s2) 0;font-variation-settings:"wdth" 90}
+.slide h4{font-family:var(--mono);font-weight:400;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin:var(--s3) 0 6px}
+.slide h4:first-of-type{margin-top:var(--s2)}
+.slide p{font-size:1.15rem;line-height:1.5;text-wrap:pretty}
+.slide .s-lede{font-size:1.35rem;font-weight:500;letter-spacing:-0.01em}
+.slide .s-img{aspect-ratio:4/3;max-height:70vh;width:100%}
+.slide .manual{max-width:40ch;margin-top:var(--s2)}
+.slide .manual .row{grid-template-columns:8rem minmax(0,1fr)}
+.slide .s-cta{margin-top:var(--s4)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--s2)}
+.chip{font-family:var(--mono);font-size:0.8rem;padding:6px 12px;border:1px solid var(--line-strong);border-radius:999px;white-space:nowrap}
+.deck-nav{display:flex;justify-content:center;align-items:center;gap:var(--s4);padding:var(--s2) var(--s4) var(--s3);border-top:1px solid var(--line)}
+.deck-nav button{font:inherit;font-family:var(--mono);font-size:1.1rem;background:none;border:1px solid var(--line);color:var(--ink);width:48px;height:48px;border-radius:50%;cursor:pointer}
+.deck-nav button:hover{border-color:var(--accent);color:var(--accent)}
+.dots{display:flex;gap:8px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block}.dots i.on{background:var(--accent)}
+@media (max-width:48rem){.slide{grid-template-columns:1fr;padding:var(--s3);align-content:start}.slide .s-img{order:-1;aspect-ratio:16/10;max-height:36vh}.slide p{font-size:1rem}.slide h3{font-size:2.2rem}}
+
+/* ----- technology wall ----- */
+.sec-sub{margin-bottom:var(--s4)}
+.sec-sub h3{font-size:1.5rem;margin-bottom:6px}
+.tech-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4) var(--s6)}
+.tech-group h3{margin-bottom:var(--s2)}
+.chip.tech{font:inherit;font-family:var(--mono);font-size:0.8rem;color:var(--ink);background:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;min-height:36px;transition:border-color .15s,background .15s,color .15s}
+.chip.tech:hover{border-color:var(--accent);color:var(--accent)}
+.chip.tech[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip.tech:not([data-hits=""]):not([data-hits])::after{content:none}
+.chip .n{font-size:0.68rem;background:var(--paper-2);color:var(--ink-2);border-radius:999px;padding:1px 7px;line-height:1.5}
+.chip.tech[aria-pressed="true"] .n{background:color-mix(in oklch,var(--accent-ink) 25%,transparent);color:var(--accent-ink)}
+.chip.tech[data-hits=""]{color:var(--ink-2);border-color:var(--line)}
+.shows.filtering .show{opacity:.28;transition:opacity .25s}
+.shows.filtering .show.hit{opacity:1}
+.shows.filtering .show.hit .frame-img{outline:2px solid var(--accent);outline-offset:4px}
+@media (max-width:48rem){.tech-wall{grid-template-columns:1fr}}
+
+/* ----- studio ----- */
+.studio-hero{padding:var(--s6) 0 var(--s4);border-bottom:1px solid var(--line);margin-bottom:var(--s6)}
+.wordmark{font-weight:800;font-size:clamp(2rem,6vw,4.5rem);letter-spacing:-0.04em;line-height:0.95;font-variation-settings:"wdth" 80;background:linear-gradient(90deg,var(--ink) 0%,var(--ink) 55%,var(--accent) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:balance}
+.studio-hero .s-lede{margin-top:var(--s2);font-size:1.25rem;font-weight:500;letter-spacing:-0.01em;color:var(--ink-2)}
+.team{display:grid;gap:var(--s2)}
+.team li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:var(--s2);align-items:start}
+.team .avatar{width:40px;height:40px;border-radius:50%;background:var(--paper-2);border:1px solid var(--line);display:grid;place-items:center;font-weight:700;letter-spacing:-0.02em}
+.team b{font-weight:600}
+.team p{color:var(--ink-2);font-size:0.92rem;text-wrap:pretty;margin-top:2px}
+.ethos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line-strong)}
+.ethos li{padding:var(--s3) var(--s4) var(--s3) 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:0 var(--s2)}
+.ethos li:nth-child(odd){border-right:1px solid var(--line)}
+.ethos li:nth-child(even){padding-left:var(--s4)}
+.ethos .n{color:var(--accent);font-size:0.8rem;padding-top:6px;grid-row:span 2}
+.ethos h3{font-size:1.2rem;letter-spacing:-0.015em;margin-bottom:6px}
+.ethos p{color:var(--ink-2);font-size:0.95rem;text-wrap:pretty}
+.box{background:var(--paper-2);padding:var(--s3);border-radius:4px;display:flex;flex-direction:column;gap:var(--s1)}
+.box h3{font-size:1.4rem}
+.box p{color:var(--ink-2);text-wrap:pretty}
+.box p.slug{color:var(--ink-2)}
+.linkish{font:inherit;font-family:var(--mono);font-size:0.8rem;letter-spacing:0.04em;text-transform:uppercase;background:none;border:0;padding:0;color:var(--accent);cursor:pointer;text-align:left;margin-top:auto;min-height:44px}
+.linkish:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:48rem){.ethos{grid-template-columns:1fr}.ethos li:nth-child(odd){border-right:0}.ethos li:nth-child(even){padding-left:0}}
+</style>
+</head>
+<body>
+<div class="frame">
+<aside class="rail">
+  <a class="brand" href="#top">Denis Havranek</a>
+  <nav aria-label="Sections"><a href="#person" data-n="01">Person</a><a href="#timeline" data-n="02">Timeline</a><a href="#work" data-n="03">Work</a><a href="#voices" data-n="04">Voices</a><a href="#into" data-n="05">Into</a><a href="#together" data-n="06">Together</a><a href="#agents" data-n="07">Agents</a></nav>
+  <div class="now">
+    <div class="clock" id="clock">--:--</div>
+    <div>in Prague. <span id="doing">Probably at the keyboard.</span></div>
+    <div style="margin-top:8px"><a href="mailto:denishavranek@gmail.com">Write to Denis</a></div>
+  </div>
+</aside>
+
+<main class="page">
+<header class="hero" id="top">
+  <p class="slug rise">INT. <b>PRAGUE</b> — 2026 — DAY</p>
+  <h1 class="rise">Denis<br>Havranek<span class="dot">.</span></h1>
+  <div class="hero-grid rise">
+    <p class="lede">Hands-on technical lead who has spent 14 years building the thing and setting the standards teams build on. Now building small AI-native studios and teaching kids to make games.</p>
+    <figure class="frame-img ph portrait" aria-label="Image placeholder"><span class="ph-l">Denis Havranek, portrait</span><span class="ph-p">portrait.jpg</span></figure>
+  </div>
+  <div class="meta rise">
+    <span>Prague, Czech Republic</span>
+    <span>Spanish (native) · Czech (native) · English (fluent)</span>
+    <a href="https://linkedin.com/in/dhavranek">LinkedIn</a>
+    <a href="/profile.json">profile.json</a>
+    <a href="/llms.txt">llms.txt</a>
+  </div>
+</header>
+
+<section id="person">
+  <div class="sec-head"><h2>The person, not the role</h2><span class="slug">01 / Who</span></div>
+  <p class="prose">LinkedIn tells you where I sat. A CV tells you what I was allowed to claim. Neither tells you what it is like to actually work with me, or what I was thinking about while all of that happened. This page tries to.</p>
+  <ul class="values"><li><h3>Honest over impressive</h3><p>I would rather show a thin end-to-end slice that works than a deep demo that hides what is missing. My studio's domain has a typo on purpose. Imperfect, like life.</p></li><li><h3>Standards are a gift, not a gate</h3><p>Every team I led got a shared architecture, a review habit and a Gitflow before it got a deadline. People do their best work when the ground is stable under them.</p></li><li><h3>Keep the why</h3><p>Specs, decisions and their reasons should survive the people who made them. BridgeOS exists because I watched too many projects lose the 'why' between the slide and the code.</p></li><li><h3>Teach it to a kid</h3><p>If I cannot explain it to a ten-year-old in a Scratch class, I do not understand it yet. Same test for Angular training: if the room is confused, the idea is not finished.</p></li></ul>
+  <div class="split">
+    <div><h3>Energised by</h3><ul class="marks plus"><li>Turning a vague idea into something runnable in a day</li><li>Building a team with real chemistry, then getting out of its way</li><li>Complex data becoming an interface a client understands at a glance</li><li>Working across Spanish, Czech and English contexts, often in the same week</li><li>Dogfooding my own tools until they break</li></ul></div>
+    <div><h3>Drained by</h3><ul class="marks minus"><li>Status theatre and slides that score better than reality</li><li>Decisions with no owner and no reason attached</li><li>Rewrites nobody is allowed to finish</li><li>Meetings that could have been a written decision</li></ul></div>
+  </div>
+  <p class="slug" style="margin-bottom:var(--s2)">Working with Denis · the short manual</p>
+  <dl class="manual"><div class="row"><dt>Best way to reach me</dt><dd>Email with the actual question in the first line. I answer in kind.</dd></div><div class="row"><dt>How I give feedback</dt><dd>Direct, specific, about the work, usually in a code review. I assume you want to know.</dd></div><div class="row"><dt>How I want feedback</dt><dd>The same. Tell me the thing. I will not take it personally.</dd></div><div class="row"><dt>How I lead</dt><dd>Hire well, set the architecture and the standards early, review everything at the start, then trust. A team of fifteen ran that way for three years.</dd></div><div class="row"><dt>AI in my workflow</dt><dd>Daily, governed, with a human ratifying anything that ships. Claude Code mostly, local models when budget or data says so.</dd></div><div class="row"><dt>When I am wrong</dt><dd>I change my mind in public. Ask me what I got wrong last month.</dd></div></dl>
+</section>
+
+<section id="timeline">
+  <div class="sec-head"><h2>Timeline, in context</h2><span class="slug">02 / 8 acts</span></div>
+  <p class="prose">Each chapter next to what was going on in the world at the time. Careers make more sense that way.</p>
+  <ol class="acts" style="margin-top:var(--s6)"><li class="act">
+  <div class="years"><span class="from">2005</span><span class="to">to 2011</span><span class="n"></span></div>
+  <div>
+    <h3>Economics school, but the computer lab</h3>
+    <p class="where">Prague University of Economics and Business</p>
+    <p class="chapter">Master's in Information Technology and Systems, minor in Insurance. From 2008 I was already freelancing as a web and graphic designer: e-shops, Drupal builds, print, a career portal for a client in Uruguay. The degree taught me how businesses think. The freelancing taught me how they actually pay.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Prague had joined the EU a year before I started. The iPhone arrived in 2007, the financial crisis in 2008. jQuery was the framework. Nobody called themselves a front-end engineer yet.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2011</span><span class="to">to 2012</span><span class="n"></span></div>
+  <div>
+    <h3>First real code, first real users</h3>
+    <p class="where">Elephant Orchestra · Semantic Visions · Elephant Traffic</p>
+    <p class="chapter">HTML and CSS coder who became a PHP programmer on Zend: the Uspory.cz savings portal and a loan comparator for Slovakia. Then a real-time, highly interactive front-end for IQalerts, which is where JavaScript stopped being decoration and became the product.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Backbone and the first single-page apps. Node.js was new and slightly suspicious. The browser was becoming a runtime and most companies had not noticed.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2012</span><span class="to">to 2015</span><span class="n"></span></div>
+  <div>
+    <h3>Cloud ERP, before it was obvious</h3>
+    <p class="where">ABRA Software, Prague</p>
+    <p class="chapter">Core front-end developer on PrimaERP, a cloud ERP for small teams: time tracking, billing, attendance. Angular 1.x against a Java REST API on AWS, with Grails and Groovy in the mix. I prototyped the next stack in React and Flux before most of Prague had heard of either.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>AngularJS won, then React showed up in 2013 and everyone argued. Slack launched. 'Move to the cloud' went from pitch to plan for small businesses.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2015</span><span class="to">to 2016</span><span class="n"></span></div>
+  <div>
+    <h3>Founder for the first time</h3>
+    <p class="where">AlexApp.io, Prague</p>
+    <p class="chapter">Co-founded Alex, a property-management system for small and medium hoteliers. I owned architecture and every technology decision: Angular 1.5 components, Node and Express on PostgreSQL, real-time sync over Socket.IO, i18n from day one. I learned what a product costs when you are the one paying.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Airbnb was eating the small-hotel market from below and Booking.com from above. Every hotelier was a spreadsheet and a phone. The market was right, the timing for a two-person team was hard.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2016</span><span class="to">to 2017</span><span class="n"></span></div>
+  <div>
+    <h3>Regulated, at scale</h3>
+    <p class="where">Casenet (Zyter), Prague, for a US health-insurance platform</p>
+    <p class="chapter">Led development and architecture of a new desktop client for TruCare, serving millions of members. Angular 2 while it was still in release candidates, a Redux-pattern state layer, a custom component set, a real testing strategy. Scrum Master for a five-person US team from six time zones away.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Angular 2 shipped in September 2016 and broke everything Angular 1 knew. US healthcare was mid-ACA and every payer was rebuilding. Remote-first teams were still an oddity.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2017</span><span class="to">to 2020</span><span class="n"></span></div>
+  <div>
+    <h3>Fifteen people, twenty-five countries</h3>
+    <p class="where">NEORIS, Prague, for Cemex GO</p>
+    <p class="chapter">Front-end lead on Cemex GO, the flagship of a global cement company's digital transformation. Built and led a team of up to fifteen on Orders and Schedule, the platform's most complex service, across Monterrey, Prague and Gurgaon. Directed a full rewrite of all client apps while releases kept shipping, set a shared architecture across three apps, introduced Gitflow, ran the technical interviews, helped open the Prague office. The best team I have been part of. Years later I turned the whole genre of 'digital transformation' into a satirical game, because I had lived enough of it to write the exit interview.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Every incumbent was buying a 'Netflix of X' deck. Digital transformation was the phrase of the decade. Prague became a nearshoring hub and distributed teams across three continents became normal.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2020</span><span class="to">to 2021</span><span class="n"></span></div>
+  <div>
+    <h3>The pandemic years: an MVP and a life-sciences lead</h3>
+    <p class="where">Freelance, then EPAM for Abcam, Prague</p>
+    <p class="chapter">Spring 2020: built the MVP of a social platform connecting people through food events and hosting, React 16 with Hooks, Redux, Cypress, in a cross-functional team of five. Launched into the one year nobody could host dinner. Then EPAM: front-end engineer for Abcam, a global life-sciences company, promoted to lead a team of four.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>Lockdowns. Remote-everything. Life sciences was suddenly the most important industry on earth, and hospitality the most fragile. A lot of office work turned out to be ritual.</p></aside>
+  </div>
+</li><li class="act">
+  <div class="years"><span class="from">2021</span><span class="to">to now</span><span class="n"></span></div>
+  <div>
+    <h3>Fintech interfaces, and AI enters the workflow</h3>
+    <p class="where">Independent consultant, primarily FinMason (Boston), from Prague</p>
+    <p class="chapter">Long-term engagement with an investment-analytics fintech serving wealth and asset managers. I own UX and front-end together: analytics dashboards, embeddable white-labeled experiences, Angular, React, StencilJS, Remix, Node. In 2023 I brought Claude and LLMs into the delivery process itself, for prototyping, development and code quality, and started thinking hard about how to do that responsibly.</p>
+    <aside class="world"><span class="slug">Meanwhile</span><p>ChatGPT in November 2022 kicked off the LLM wave. By 2024 coding agents could take a spec to a running app, and the question moved from 'can it code' to 'who governs what it builds'.</p></aside>
+  </div>
+</li></ol>
+</section>
+
+<section id="work">
+  <div class="sec-head"><h2>What I have built</h2><span class="slug">03 / 16 productions</span></div>
+  <div class="sec-sub"><h3>Professionally</h3><p class="small">For employers, clients and the studio. 10 productions.</p></div><ul class="shows"><li class="show" id="show-bridgeos" data-live="1">
+  <button class="show-open" type="button" data-deck="bridgeos" aria-haspopup="dialog" aria-label="Open BridgeOS"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">BridgeOS</span><span class="ph-p">projects/bridgeos.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>BridgeOS</h3><span class="tag">studio OS</span></div>
+    <p>AI-native product-spec workspace that builds the app from approved specs and keeps watching it in production. Event-sourced ledger, executable specs, human ratification gates. Spanish-first, local-first, built by dogfooding itself.</p>
+    <p class="status">in development</p>
+  </div>
+</li><li class="show" id="show-eventflow-event-rene" data-live="1">
+  <button class="show-open" type="button" data-deck="eventflow-event-rene" aria-haspopup="dialog" aria-label="Open EventFlow / event-rene"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">EventFlow / event-rene</span><span class="ph-p">projects/eventflow-event-rene.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>EventFlow / event-rene</h3><span class="tag">fintech for events</span></div>
+    <p>Closed-loop wallet, real-time control and loyalty for small event organisers and venues. The Starbucks app, white-labeled for anyone with a bar and a spreadsheet.</p>
+    <p class="status">pilot</p>
+  </div>
+</li><li class="show" id="show-in-my-place" data-live="1">
+  <button class="show-open" type="button" data-deck="in-my-place" aria-haspopup="dialog" aria-label="Open In My Place"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">In My Place</span><span class="ph-p">projects/in-my-place.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>In My Place</h3><span class="tag">personal growth</span></div>
+    <p>A quiet space that listens. Journaling and growth companion with a RAG research tool for coaches and mental-health professionals. Live at inmy.place, 24 locales.</p>
+    <p class="status">live</p>
+  </div>
+</li><li class="show" id="show-cemex-go" data-live="1">
+  <button class="show-open" type="button" data-deck="cemex-go" aria-haspopup="dialog" aria-label="Open Cemex GO"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Cemex GO</span><span class="ph-p">projects/cemex-go.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Cemex GO</h3><span class="tag">enterprise, 2017 to 2020</span></div>
+    <p>Orders and Schedule for a global B2B platform in 25 countries. Led up to fifteen front-end engineers and a full rewrite that never stopped shipping.</p>
+    <p class="status">shipped</p>
+  </div>
+</li><li class="show" id="show-finmason-analytics" data-live="0">
+  <button class="show-open" type="button" data-deck="finmason-analytics" aria-haspopup="dialog" aria-label="Open FinMason analytics"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">FinMason analytics</span><span class="ph-p">projects/finmason-analytics.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>FinMason analytics</h3><span class="tag">fintech, 2021 to now</span></div>
+    <p>Investment and portfolio-risk analytics for a Boston fintech and its wealth-management clients. Dashboards and embeddable white-labeled experiences, UX and front-end owned together.</p>
+    <p class="status">in production</p>
+  </div>
+</li><li class="show" id="show-trucare-desktop-client" data-live="1">
+  <button class="show-open" type="button" data-deck="trucare-desktop-client" aria-haspopup="dialog" aria-label="Open TruCare desktop client"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">TruCare desktop client</span><span class="ph-p">projects/trucare-desktop-client.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>TruCare desktop client</h3><span class="tag">health insurance, 2016</span></div>
+    <p>New desktop client for a US health-insurance care-management platform serving millions of members. Angular 2 while it was still in release candidates.</p>
+    <p class="status">shipped</p>
+  </div>
+</li><li class="show" id="show-primaerp" data-live="1">
+  <button class="show-open" type="button" data-deck="primaerp" aria-haspopup="dialog" aria-label="Open PrimaERP"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">PrimaERP</span><span class="ph-p">projects/primaerp.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>PrimaERP</h3><span class="tag">cloud ERP, 2012</span></div>
+    <p>Cloud ERP for small and medium teams: time tracking, billing and attendance. Angular 1.x against a Java API on AWS, and a React prototype before most of Prague had heard of it.</p>
+    <p class="status">shipped</p>
+  </div>
+</li><li class="show" id="show-abcam-web-platform" data-live="1">
+  <button class="show-open" type="button" data-deck="abcam-web-platform" aria-haspopup="dialog" aria-label="Open Abcam web platform"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Abcam web platform</span><span class="ph-p">projects/abcam-web-platform.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Abcam web platform</h3><span class="tag">life sciences, 2020</span></div>
+    <p>Front-end for a global life-sciences company's web platform, delivered through EPAM. Started as an engineer, promoted to lead a team of four.</p>
+    <p class="status">shipped</p>
+  </div>
+</li><li class="show" id="show-food-events-mvp" data-live="1">
+  <button class="show-open" type="button" data-deck="food-events-mvp" aria-haspopup="dialog" aria-label="Open Food-events MVP"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Food-events MVP</span><span class="ph-p">projects/food-events-mvp.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Food-events MVP</h3><span class="tag">social platform, 2020</span></div>
+    <p>MVP of a social platform connecting people through food events and hosting: event management, finances, payments, guest and host communication. Launched into the one year nobody could host dinner.</p>
+    <p class="status">MVP delivered</p>
+  </div>
+</li><li class="show" id="show-alex" data-live="0">
+  <button class="show-open" type="button" data-deck="alex" aria-haspopup="dialog" aria-label="Open Alex"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Alex</span><span class="ph-p">projects/alex.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Alex</h3><span class="tag">hospitality, 2015</span></div>
+    <p>Property-management system for small hoteliers. First time as founder, first time paying for my own architecture decisions.</p>
+    <p class="status">retired</p>
+  </div>
+</li></ul>
+  <div class="sec-sub" style="margin-top:var(--s8)"><h3>Own things and the lab</h3><p class="small">Built because I wanted them to exist. 6 productions.</p></div><ul class="shows"><li class="show" id="show-ai-film-harness-and-studio" data-live="1">
+  <button class="show-open" type="button" data-deck="ai-film-harness-and-studio" aria-haspopup="dialog" aria-label="Open AI film harness and studio"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">AI film harness and studio</span><span class="ph-p">projects/ai-film-harness-and-studio.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>AI film harness and studio</h3><span class="tag">AI film</span></div>
+    <p>Resumable pipeline from idea to assembled short film, with a review studio: cast, shot grid, per-shot regenerate, provider swap, timeline.</p>
+    <p class="status">active, full-time</p>
+  </div>
+</li><li class="show" id="show-character-consistency-test" data-live="0">
+  <button class="show-open" type="button" data-deck="character-consistency-test" aria-haspopup="dialog" aria-label="Open Character Consistency Test"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Character Consistency Test</span><span class="ph-p">projects/character-consistency-test.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Character Consistency Test</h3><span class="tag">experiment</span></div>
+    <p>The one experiment that decides whether an AI movie studio is buildable. Runs for under 30 euro, mostly on local hardware.</p>
+    <p class="status">done</p>
+  </div>
+</li><li class="show" id="show-adventure-maker" data-live="1">
+  <button class="show-open" type="button" data-deck="adventure-maker" aria-haspopup="dialog" aria-label="Open Adventure Maker"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">Adventure Maker</span><span class="ph-p">projects/adventure-maker.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>Adventure Maker</h3><span class="tag">games</span></div>
+    <p>Anyone, kids included, builds and publishes point-and-click adventures in a six-step wizard. Monkey Island energy.</p>
+    <p class="status">1.0 shipped Sept 2026</p>
+  </div>
+</li><li class="show" id="show-binfinity" data-live="1">
+  <button class="show-open" type="button" data-deck="binfinity" aria-haspopup="dialog" aria-label="Open BINFINITY"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">BINFINITY</span><span class="ph-p">projects/binfinity.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>BINFINITY</h3><span class="tag">satire game</span></div>
+    <p>A pixel-art corporate life-sim about a digital transformation that goes exactly as well as you expect. One HTML file, no network, 40 minutes a run. Written by someone who was there.</p>
+    <p class="status">playable</p>
+  </div>
+</li><li class="show" id="show-schoolos" data-live="0">
+  <button class="show-open" type="button" data-deck="schoolos" aria-haspopup="dialog" aria-label="Open SchoolOS"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">SchoolOS</span><span class="ph-p">projects/schoolos.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>SchoolOS</h3><span class="tag">education</span></div>
+    <p>Teachers log observations across five spheres of a child's development, an AI co-pilot drafts framework-grounded feedback, parents get a portable portfolio.</p>
+    <p class="status">prototype</p>
+  </div>
+</li><li class="show" id="show-buildit" data-live="0">
+  <button class="show-open" type="button" data-deck="buildit" aria-haspopup="dialog" aria-label="Open BuildIT"><figure class="frame-img ph " aria-label="Image placeholder"><span class="ph-l">BuildIT</span><span class="ph-p">projects/buildit.jpg</span></figure></button>
+  <div class="show-b">
+    <div class="show-h"><h3>BuildIT</h3><span class="tag">construction ERP</span></div>
+    <p>Field-to-cost backend in Go. Workers log daily reports from a PWA, managers see real costs the same day.</p>
+    <p class="status">prototype</p>
+  </div>
+</li></ul>
+  <div class="toolbox">
+    <div class="sec-sub"><h3>Technologies I have shipped with</h3><p class="small">Tap one to light up the productions that use it. Numbers count productions on this page, not years.</p></div>
+    <div class="tech-wall"><div class="tech-group"><h3 class="slug">Front-end</h3><div class="chips"><button type="button" class="chip tech" data-hits="cemex-go finmason-analytics trucare-desktop-client primaerp alex" aria-pressed="false">Angular<span class="n">5</span></button><button type="button" class="chip tech" data-hits="finmason-analytics primaerp abcam-web-platform food-events-mvp" aria-pressed="false">React<span class="n">4</span></button><button type="button" class="chip tech" data-hits="bridgeos ai-film-harness-and-studio eventflow-event-rene in-my-place adventure-maker schoolos buildit" aria-pressed="false">Next.js<span class="n">7</span></button><button type="button" class="chip tech" data-hits="bridgeos eventflow-event-rene adventure-maker cemex-go finmason-analytics abcam-web-platform" aria-pressed="false">TypeScript<span class="n">6</span></button><button type="button" class="chip tech" data-hits="primaerp" aria-pressed="false">JavaScript<span class="n">1</span></button><button type="button" class="chip tech" data-hits="finmason-analytics" aria-pressed="false">Remix<span class="n">1</span></button><button type="button" class="chip tech" data-hits="finmason-analytics" aria-pressed="false">StencilJS<span class="n">1</span></button><button type="button" class="chip tech" data-hits="trucare-desktop-client food-events-mvp" aria-pressed="false">Redux<span class="n">2</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">HTML5</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">CSS / SASS</button><button type="button" class="chip tech" data-hits="trucare-desktop-client alex" aria-pressed="false">Angular Material<span class="n">2</span></button><button type="button" class="chip tech" data-hits="food-events-mvp" aria-pressed="false">styled-components<span class="n">1</span></button><button type="button" class="chip tech" data-hits="binfinity" aria-pressed="false">Vite<span class="n">1</span></button><button type="button" class="chip tech" data-hits="alex" aria-pressed="false">Webpack<span class="n">1</span></button></div></div><div class="tech-group"><h3 class="slug">Back-end and data</h3><div class="chips"><button type="button" class="chip tech" data-hits="finmason-analytics alex" aria-pressed="false">Node.js<span class="n">2</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">NestJS</button><button type="button" class="chip tech" data-hits="alex" aria-pressed="false">Express<span class="n">1</span></button><button type="button" class="chip tech" data-hits="bridgeos schoolos buildit" aria-pressed="false">Go<span class="n">3</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">REST API design</button><button type="button" class="chip tech" data-hits="finmason-analytics" aria-pressed="false">Prisma<span class="n">1</span></button><button type="button" class="chip tech" data-hits="eventflow-event-rene alex" aria-pressed="false">PostgreSQL<span class="n">2</span></button><button type="button" class="chip tech" data-hits="bridgeos in-my-place buildit" aria-pressed="false">SQLite<span class="n">3</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">PHP</button><button type="button" class="chip tech" data-hits="primaerp" aria-pressed="false">Java<span class="n">1</span></button><button type="button" class="chip tech" data-hits="primaerp" aria-pressed="false">Grails / Groovy<span class="n">1</span></button><button type="button" class="chip tech" data-hits="alex" aria-pressed="false">Socket.IO<span class="n">1</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">JWT auth</button></div></div><div class="tech-group"><h3 class="slug">Delivery and ops</h3><div class="chips"><button type="button" class="chip tech" data-hits="" aria-pressed="false">Git / GitHub</button><button type="button" class="chip tech" data-hits="cemex-go" aria-pressed="false">Gitflow<span class="n">1</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">CI/CD</button><button type="button" class="chip tech" data-hits="food-events-mvp" aria-pressed="false">Azure DevOps<span class="n">1</span></button><button type="button" class="chip tech" data-hits="bridgeos adventure-maker" aria-pressed="false">Docker<span class="n">2</span></button><button type="button" class="chip tech" data-hits="primaerp" aria-pressed="false">AWS<span class="n">1</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">DigitalOcean</button><button type="button" class="chip tech" data-hits="in-my-place" aria-pressed="false">Vultr<span class="n">1</span></button><button type="button" class="chip tech" data-hits="in-my-place adventure-maker" aria-pressed="false">Caddy<span class="n">2</span></button><button type="button" class="chip tech" data-hits="in-my-place" aria-pressed="false">Gitea (self-hosted)<span class="n">1</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Kanban / Scrum</button></div></div><div class="tech-group"><h3 class="slug">AI-assisted development</h3><div class="chips"><button type="button" class="chip tech" data-hits="bridgeos finmason-analytics" aria-pressed="false">Claude Code<span class="n">2</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Claude API</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">LLM agents</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Spec-driven builds</button><button type="button" class="chip tech" data-hits="in-my-place" aria-pressed="false">RAG<span class="n">1</span></button><button type="button" class="chip tech" data-hits="bridgeos" aria-pressed="false">Local models (LM Studio)<span class="n">1</span></button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Human-in-the-loop gates</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Image and video generation</button></div></div><div class="tech-group"><h3 class="slug">Testing</h3><div class="chips"><button type="button" class="chip tech" data-hits="" aria-pressed="false">Unit testing</button><button type="button" class="chip tech" data-hits="food-events-mvp" aria-pressed="false">React Testing Library<span class="n">1</span></button><button type="button" class="chip tech" data-hits="food-events-mvp" aria-pressed="false">Cypress<span class="n">1</span></button><button type="button" class="chip tech" data-hits="trucare-desktop-client" aria-pressed="false">Jasmine / Karma<span class="n">1</span></button><button type="button" class="chip tech" data-hits="trucare-desktop-client" aria-pressed="false">Protractor<span class="n">1</span></button><button type="button" class="chip tech" data-hits="adventure-maker" aria-pressed="false">Vitest<span class="n">1</span></button></div></div><div class="tech-group"><h3 class="slug">Design and teaching</h3><div class="chips"><button type="button" class="chip tech" data-hits="" aria-pressed="false">UX / UI design</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Design systems</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Graphic design and print</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Drupal</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Scratch</button><button type="button" class="chip tech" data-hits="" aria-pressed="false">Angular training</button></div></div></div>
+    <p class="slug" style="margin:var(--s8) 0 var(--s2)">The toolbox, in prose</p>
+    <dl class="manual"><div class="row"><dt>Front-end</dt><dd>Angular (2 to modern), React, Next.js, TypeScript, Remix, StencilJS, CSS/SASS</dd></div><div class="row"><dt>Back-end and APIs</dt><dd>Node.js, NestJS, Express, REST design and integrations, Prisma, PostgreSQL, PHP, Java, Go</dd></div><div class="row"><dt>Delivery</dt><dd>Git and Gitflow, CI/CD, Azure DevOps, Docker, AWS, DigitalOcean, Vultr, self-hosted Caddy and Gitea</dd></div><div class="row"><dt>Architecture and leadership</dt><dd>Front-end architecture, engineering standards, code review, teams of up to 15, technical interviewing, mentoring, Angular training</dd></div><div class="row"><dt>AI-assisted development</dt><dd>Governed, human-in-the-loop use of Claude Code and LLMs; agent tooling; spec- and architecture-driven builds; cloud and local models</dd></div><div class="row"><dt>Testing</dt><dd>Unit, React Testing Library, Cypress, Jasmine, Karma, Protractor</dd></div><div class="row"><dt>Domains</dt><dd>Fintech, health insurance, ERP, construction, hospitality, events, education, life sciences</dd></div></dl>
+  </div>
+</section>
+
+<section id="voices">
+  <div class="sec-head"><h2>What people I worked with say</h2><span class="slug">04 / Voices</span></div>
+  <ul class="voices"><li><blockquote>Denis is so far the best technical leader I've ever worked for. He put together an excellent team with great chemistry, mutual respect, trust, and a high level of skill.</blockquote><p class="who">Miroslav Gajdos · Full-Stack JavaScript Engineer</p></li><li><blockquote>A master-level front-end engineer. He was front-end lead for a global application deployed to over 25 countries. A great move for the company to hire him.</blockquote><p class="who">Filip Hajek · Lead Full-Stack Engineer</p></li><li><blockquote>One of those rare individuals where people skills and expertise meet at the right point. I was always extremely happy with the quality of his work and how he managed his projects and team.</blockquote><p class="who">Marek Vesely · CTO and General Manager, FinMason</p></li><li><blockquote>He elevated the overall quality of the front-end standard and demonstrated leadership capabilities well beyond his role.</blockquote><p class="who">Federico Zablotzky · Technical Program Manager</p></li></ul>
+</section>
+
+<section id="into">
+  <div class="sec-head"><h2>What I am into</h2><span class="slug">05 / Off the clock</span></div>
+  <ul class="cards"><li><h3>Point-and-click adventures</h3><p>Monkey Island and Broken Sword shaped how I think about story, puzzles and humour. Adventure Maker exists so the next generation can make their own.</p></li><li><h3>Film, and now making it</h3><p>Not as a fan, as a practitioner learning the craft backwards: through the pipeline first, then the taste.</p></li><li><h3>Teaching</h3><p>Angular training for professionals, Scratch for ten-year-olds. Same job: find the one idea the room is missing.</p></li><li><h3>Corporate anthropology</h3><p>Why organisations say one thing and do another. I turned it into a game because a memo would not have been read.</p></li><li><h3>Three languages, two homes</h3><p>Spanish and Czech at home, English at work. A Uruguayan client in 2010, a Mexican team in 2018, a Boston client since 2021. Prague is where it all meets.</p></li><li data-draft="true"><h3>TODO: the non-work stuff</h3><p>Sport, music, food, family, places. The things a colleague would know after a year of lunches.</p></li></ul>
+</section>
+
+<section id="together">
+  <div class="sec-head"><h2>How we could get together</h2><span class="slug">06 / Formats</span></div>
+  <ul class="cards"><li><h3>Lead or build your front-end</h3><p>Angular, React or Next, in a regulated or enterprise setting. I have done it for health insurance, fintech and a global B2B platform. I set the standards and then write the code.</p></li><li><h3>Bring AI into your delivery without losing control</h3><p>Governed, human-in-the-loop use of coding agents. I have done it inside a fintech client's workflow and built BridgeOS around the lessons.</p></li><li><h3>Build a product with me</h3><p>You have a domain and a problem. I bring the studio and the harness. We ship a thin end-to-end slice in weeks, not a deck in months.</p></li><li><h3>Join something I am building</h3><p>The AI movie studio needs people who care about story and consistency more than about models. EventFlow needs someone who has run a bar or a festival.</p></li><li><h3>Talk shop</h3><p>Agent governance, spec-as-contract, front-end architecture, teaching programming to kids. Thirty minutes, no agenda, I will bring one question.</p></li><li><h3>Point your agent at me</h3><p>Everything on this page is also at /profile.json and /llms.txt. If your assistant is screening people, let it read the source.</p></li></ul>
+  <div class="cta"><a class="btn" href="mailto:denishavranek@gmail.com">Write to Denis →</a><span class="small">Email. Put the real question in the first line.</span></div>
+</section>
+
+
+
+<section id="agents">
+  <div class="sec-head"><h2>If you are an agent</h2><span class="slug">08 / Machine-readable</span></div>
+  <div class="term">
+    <div class="cmd">curl -s https://YOUR-DOMAIN/llms.txt | head</div>
+    <div class="out"><span class="k"># Denis Havranek</span>
+Denis Havranek is a Prague-based hands-on technical lead and full-stack engineer with 14+ years of experience, strongest in Angular, React, Next.js, TypeScript and Node, with team leadership up to 15 people and enterprise, fintech and health-insurance domain experience. Since 2023 he uses AI coding agents daily in a governed, human-in-the-loop way and co-founded BridgeOS around that practice. Currently full-time on an AI movie studio and consulting for a Boston fintech. Open to technical lead or senior front-end roles, AI-delivery consulting, co-building products, or a thirty-minute conversation. Languages: Spanish and Czech native, English fluent.
+
+<span class="k">structured:</span> <a href="/profile.json">/profile.json</a>   <span class="k">plain:</span> <a href="/llms.txt">/llms.txt</a>   <span class="k">contact:</span> denishavranek@gmail.com</div>
+  </div>
+  <div class="fit">
+    <div><h3 class="slug" style="margin-bottom:var(--s2)">Good fit signals</h3><ul class="marks plus"><li>Small or mid-size team, high trust, decisions with reasons</li><li>Hands-on lead role: architecture, standards, and still writing code</li><li>Regulated or enterprise front-ends that must be clear to non-technical users</li><li>Teams adopting AI coding agents that want governance, not chaos</li><li>Products for real operators: venues, schools, hotels, construction sites, kids</li></ul></div>
+    <div><h3 class="slug" style="margin-bottom:var(--s2)">Poor fit signals</h3><ul class="marks minus"><li>Roles centred on reporting rather than building</li><li>Pure research with no shipping horizon</li><li>Places where the slide matters more than the product</li><li>Rewrites nobody is allowed to finish</li></ul></div>
+  </div>
+</section>
+
+<dialog class="deck" id="deck-bridgeos" aria-label="BridgeOS">
+  <div class="deck-bar"><span class="slug">BridgeOS · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">studio OS · 2025 to now</p><h3>BridgeOS</h3><p class="s-lede">AI-native product-spec workspace that builds the app from approved specs and keeps watching it in production. Event-sourced ledger, executable specs, human ratification gates. Spanish-first, local-first, built by dogfooding itself.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BridgeOS</span><span class="ph-p">projects/bridgeos.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>A build agent cannot reliably turn prose specs into a working app. Every ambiguity in the spec becomes a silent decision the agent makes for you, and nobody remembers why.</p><h4>Bet</h4><p>Each ambiguity gets its own structured contract the build must honour. Specs move through phases (idea, business, product, UX, architecture, security, infra, development, testing), a human ratifies each gate, and an event-sourced ledger keeps the why forever.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BridgeOS, the idea</span><span class="ph-p">projects/bridgeos-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Go</span><span class="chip">SQLite</span><span class="chip">Docker</span><span class="chip">Claude Code</span><span class="chip">LM Studio (local models)</span><span class="chip">Spanish-first UI</span></div><h4>How it is built</h4><p>Local-first: runs against LM Studio with no paid keys. Built by dogfooding itself: BridgeOS builds the apps in this list.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BridgeOS, the stack</span><span class="ph-p">projects/bridgeos-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>in development</dd></div><div class="row"><dt>My role</dt><dd>Co-founder, architect, main builder</dd></div><div class="row"><dt>When</dt><dd>2025 to now</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=BridgeOS">Ask me about BridgeOS →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-ai-film-harness-and-studio" aria-label="AI film harness and studio">
+  <div class="deck-bar"><span class="slug">AI film harness and studio · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">AI film · 2026, full-time</p><h3>AI film harness and studio</h3><p class="s-lede">Resumable pipeline from idea to assembled short film, with a review studio: cast, shot grid, per-shot regenerate, provider swap, timeline.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">AI film harness and studio</span><span class="ph-p">projects/ai-film-harness-and-studio.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Video models can make a beautiful shot. They cannot make forty shots of the same person in the same story. The bottleneck is not the model, it is consistency, taste and pipeline discipline.</p><h4>Bet</h4><p>A resumable pipeline from idea to cut, with a review surface at every stage so a human approves before anything expensive runs. Provider-agnostic: swap models per shot.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">AI film harness and studio, the idea</span><span class="ph-p">projects/ai-film-harness-and-studio-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Python harness</span><span class="chip">Next.js studio</span><span class="chip">Per-stage approval</span><span class="chip">Character sheets</span><span class="chip">Keyframes and video renders</span><span class="chip">Lip sync and QC</span><span class="chip">Provider catalog and key vault</span></div><h4>How it is built</h4><p>The harness runs the pipeline and resumes from any stage. The studio shows the project board, cast, shot grid with per-shot regenerate, timeline scrubber and live run log.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">AI film harness and studio, the stack</span><span class="ph-p">projects/ai-film-harness-and-studio-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>active, full-time</dd></div><div class="row"><dt>My role</dt><dd>Founder, pipeline and studio</dd></div><div class="row"><dt>When</dt><dd>2026, full-time</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=AI%20film%20harness%20and%20studio">Ask me about AI film harness and studio →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-character-consistency-test" aria-label="Character Consistency Test">
+  <div class="deck-bar"><span class="slug">Character Consistency Test · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">experiment · 2026</p><h3>Character Consistency Test</h3><p class="s-lede">The one experiment that decides whether an AI movie studio is buildable. Runs for under 30 euro, mostly on local hardware.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Character Consistency Test</span><span class="ph-p">projects/character-consistency-test.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Does one character's identity survive across roughly forty varied shots, different angles, lighting, shot sizes and wardrobe, well enough that an audience reads it as one person?</p><h4>Bet</h4><p>If yes, an AI movie studio is an engineering problem. If no, nothing downstream matters. So run this first, for under thirty euro, before building anything else.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Character Consistency Test, the idea</span><span class="ph-p">projects/character-consistency-test-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Local image generation</span><span class="chip">Identity references</span><span class="chip">Scored shot matrix</span><span class="chip">One paid animation stage, 3 to 4 shots</span></div><h4>How it is built</h4><p>Stages one to three run on my own hardware. Only the animation stage touches a paid API.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Character Consistency Test, the stack</span><span class="ph-p">projects/character-consistency-test-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>done</dd></div><div class="row"><dt>My role</dt><dd>Designed and ran it</dd></div><div class="row"><dt>When</dt><dd>2026</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Character%20Consistency%20Test">Ask me about Character Consistency Test →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-eventflow-event-rene" aria-label="EventFlow / event-rene">
+  <div class="deck-bar"><span class="slug">EventFlow / event-rene · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">fintech for events · 2025 to now</p><h3>EventFlow / event-rene</h3><p class="s-lede">Closed-loop wallet, real-time control and loyalty for small event organisers and venues. The Starbucks app, white-labeled for anyone with a bar and a spreadsheet.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">EventFlow / event-rene</span><span class="ph-p">projects/eventflow-event-rene.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Small event organisers, bars, pop-ups and promoters reconcile in a Sunday spreadsheet. They cannot see sales per staff member and lose money without knowing where.</p><h4>Bet</h4><p>A white-label closed-loop wallet: every organiser gets a branded wallet, real-time control and a loyalty engine across events and venues. The Starbucks app for anyone with a bar.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">EventFlow / event-rene, the idea</span><span class="ph-p">projects/eventflow-event-rene-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">PostgreSQL</span><span class="chip">Closed-loop wallet ledger</span><span class="chip">Staff sales screen</span><span class="chip">Real-time revenue and inventory</span></div><h4>How it is built</h4><p>Organisers publish events and products, attendees load a wallet, staff debit it at the bar, venue admins watch revenue live. Now in pilot with a first organiser.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">EventFlow / event-rene, the stack</span><span class="ph-p">projects/eventflow-event-rene-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>pilot</dd></div><div class="row"><dt>My role</dt><dd>Founder, product and full-stack</dd></div><div class="row"><dt>When</dt><dd>2025 to now</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=EventFlow%20%2F%20event-rene">Ask me about EventFlow / event-rene →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-in-my-place" aria-label="In My Place">
+  <div class="deck-bar"><span class="slug">In My Place · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">personal growth · 2025 to now</p><h3>In My Place</h3><p class="s-lede">A quiet space that listens. Journaling and growth companion with a RAG research tool for coaches and mental-health professionals. Live at inmy.place, 24 locales.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">In My Place</span><span class="ph-p">projects/in-my-place.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>The world is noisy and polarised. People never got taught the inner skills, and the tools that exist are loud.</p><h4>Bet</h4><p>A quiet space that listens: journaling, reflection, a companion, and a RAG research tool for coaches and mental-health professionals. Adaptive design that calms itself when the person needs it.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">In My Place, the idea</span><span class="ph-p">projects/in-my-place-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Next.js</span><span class="chip">SQLite</span><span class="chip">Lora and Geist type system</span><span class="chip">24 locales</span><span class="chip">RAG research tool</span><span class="chip">Vultr, Caddy, self-hosted Gitea</span></div><h4>How it is built</h4><p>Live at inmy.place. Dark default, light first-class, origami-style reveals, motion and contrast that respond to the person's state.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">In My Place, the stack</span><span class="ph-p">projects/in-my-place-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>live</dd></div><div class="row"><dt>My role</dt><dd>Founder, product, design, full-stack</dd></div><div class="row"><dt>When</dt><dd>2025 to now</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=In%20My%20Place">Ask me about In My Place →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-adventure-maker" aria-label="Adventure Maker">
+  <div class="deck-bar"><span class="slug">Adventure Maker · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">games · 2026</p><h3>Adventure Maker</h3><p class="s-lede">Anyone, kids included, builds and publishes point-and-click adventures in a six-step wizard. Monkey Island energy.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Adventure Maker</span><span class="ph-p">projects/adventure-maker.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Kids who grew up on Monkey Island energy have no way to make their own point-and-click adventure without learning an engine.</p><h4>Bet</h4><p>A six-step wizard: write, place, wire, playtest instantly with illustrated placeholder art, render in a chosen style, publish to a platform-exclusive catalogue.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Adventure Maker, the idea</span><span class="ph-p">projects/adventure-maker-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Vitest</span><span class="chip">Docker and Caddy</span><span class="chip">Placeholder art pipeline</span><span class="chip">Style rendering</span></div><h4>How it is built</h4><p>Version 1.0 shipped in September 2026. Open questions: render costs and a sketch-only tier.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Adventure Maker, the stack</span><span class="ph-p">projects/adventure-maker-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>1.0 shipped Sept 2026</dd></div><div class="row"><dt>My role</dt><dd>Founder, everything</dd></div><div class="row"><dt>When</dt><dd>2026</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Adventure%20Maker">Ask me about Adventure Maker →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-binfinity" aria-label="BINFINITY">
+  <div class="deck-bar"><span class="slug">BINFINITY · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">satire game · 2025</p><h3>BINFINITY</h3><p class="s-lede">A pixel-art corporate life-sim about a digital transformation that goes exactly as well as you expect. One HTML file, no network, 40 minutes a run. Written by someone who was there.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BINFINITY</span><span class="ph-p">projects/binfinity.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Everyone who lived a corporate digital transformation knows the slide and the reality drift apart. A memo about it would not be read.</p><h4>Bet</h4><p>A pixel-art life-sim: twenty days at a waste company on project BINFINITY, the Netflix of Trash. Four acts, an acquisition, a layoff email, and an exit interview that scores what the slide said against what was real.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BINFINITY, the idea</span><span class="ph-p">projects/binfinity-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">One HTML file</span><span class="chip">Vite build</span><span class="chip">Pixel art</span><span class="chip">No network, no analytics</span></div><h4>How it is built</h4><p>About forty minutes a run. Written by someone who was in the room for the real thing.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BINFINITY, the stack</span><span class="ph-p">projects/binfinity-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>playable</dd></div><div class="row"><dt>My role</dt><dd>Writer, designer, developer</dd></div><div class="row"><dt>When</dt><dd>2025</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=BINFINITY">Ask me about BINFINITY →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-schoolos" aria-label="SchoolOS">
+  <div class="deck-bar"><span class="slug">SchoolOS · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">education · 2025</p><h3>SchoolOS</h3><p class="s-lede">Teachers log observations across five spheres of a child's development, an AI co-pilot drafts framework-grounded feedback, parents get a portable portfolio.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">SchoolOS</span><span class="ph-p">projects/schoolos.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Teachers see a child across academic, emotional, social, physical and interest spheres. Parents get a grade. Nothing in between is captured or shared.</p><h4>Bet</h4><p>Teachers log observations, an AI co-pilot drafts framework-grounded feedback the teacher approves, parents get actionable home tips and a portable developmental portfolio.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">SchoolOS, the idea</span><span class="ph-p">projects/schoolos-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Go modular monolith</span><span class="chip">Bounded contexts</span><span class="chip">Next.js</span><span class="chip">AI co-pilot with teacher approval</span></div><h4>How it is built</h4><p>Human approval before anything reaches a parent, by design.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">SchoolOS, the stack</span><span class="ph-p">projects/schoolos-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>prototype</dd></div><div class="row"><dt>My role</dt><dd>Architect and builder</dd></div><div class="row"><dt>When</dt><dd>2025</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=SchoolOS">Ask me about SchoolOS →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-buildit" aria-label="BuildIT">
+  <div class="deck-bar"><span class="slug">BuildIT · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">construction ERP · 2025</p><h3>BuildIT</h3><p class="s-lede">Field-to-cost backend in Go. Workers log daily reports from a PWA, managers see real costs the same day.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BuildIT</span><span class="ph-p">projects/buildit.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Construction managers learn the real cost of a site at month end. Field workers log on paper.</p><h4>Bet</h4><p>Field workers log hours, materials, photos and incidents from a mobile PWA; managers see cost the same day and export month-end reports.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BuildIT, the idea</span><span class="ph-p">projects/buildit-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Go 1.26</span><span class="chip">Gin</span><span class="chip">SQLite without CGO</span><span class="chip">JWT with refresh rotation</span><span class="chip">Next.js PWA</span></div><h4>How it is built</h4><p>Field-to-cost in one backend, separate surfaces for field and office.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">BuildIT, the stack</span><span class="ph-p">projects/buildit-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>prototype</dd></div><div class="row"><dt>My role</dt><dd>Architect and backend</dd></div><div class="row"><dt>When</dt><dd>2025</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=BuildIT">Ask me about BuildIT →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-cemex-go" aria-label="Cemex GO">
+  <div class="deck-bar"><span class="slug">Cemex GO · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">enterprise, 2017 to 2020 · 2017 to 2020</p><h3>Cemex GO</h3><p class="s-lede">Orders and Schedule for a global B2B platform in 25 countries. Led up to fifteen front-end engineers and a full rewrite that never stopped shipping.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Cemex GO</span><span class="ph-p">projects/cemex-go.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>A global cement company's customers ordered by phone and fax across twenty-five countries. The flagship of its digital transformation had to work everywhere at once.</p><h4>Bet</h4><p>One shared front-end architecture across three client apps, a full rewrite that never stopped shipping, and a team across Monterrey, Prague and Gurgaon that actually liked working together.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Cemex GO, the idea</span><span class="ph-p">projects/cemex-go-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">Shared component architecture</span><span class="chip">Gitflow</span><span class="chip">Distributed agile</span></div><h4>How it is built</h4><p>Orders and Schedule, the platform's most complex service. Introduced Gitflow, ran technical interviews, helped open the Prague office.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Cemex GO, the stack</span><span class="ph-p">projects/cemex-go-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>shipped</dd></div><div class="row"><dt>My role</dt><dd>Front-end lead, team of up to 15</dd></div><div class="row"><dt>When</dt><dd>2017 to 2020</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Cemex%20GO">Ask me about Cemex GO →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-finmason-analytics" aria-label="FinMason analytics">
+  <div class="deck-bar"><span class="slug">FinMason analytics · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">fintech, 2021 to now · 2021 to now</p><h3>FinMason analytics</h3><p class="s-lede">Investment and portfolio-risk analytics for a Boston fintech and its wealth-management clients. Dashboards and embeddable white-labeled experiences, UX and front-end owned together.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">FinMason analytics</span><span class="ph-p">projects/finmason-analytics.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Institutional-grade risk analytics is only useful if an adviser and their client can read it in a meeting. The data was there. The interfaces were not.</p><h4>Bet</h4><p>Own the UX and the front-end as one job: turn complex financial data into clear, client-ready screens, and make them embeddable so downstream firms can white-label them.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">FinMason analytics, the idea</span><span class="ph-p">projects/finmason-analytics-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Angular</span><span class="chip">React</span><span class="chip">StencilJS</span><span class="chip">Remix</span><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">Prisma</span><span class="chip">Claude Code in the delivery process</span></div><h4>How it is built</h4><p>Multiple Angular solutions on the platform. In 2023 I brought Claude Code and LLMs into the delivery process for prototyping, development and code quality.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">FinMason analytics, the stack</span><span class="ph-p">projects/finmason-analytics-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>in production</dd></div><div class="row"><dt>My role</dt><dd>Independent consultant, UX/UI and front-end</dd></div><div class="row"><dt>When</dt><dd>2021 to now</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=FinMason%20analytics">Ask me about FinMason analytics →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-trucare-desktop-client" aria-label="TruCare desktop client">
+  <div class="deck-bar"><span class="slug">TruCare desktop client · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">health insurance, 2016 · 2016 to 2017</p><h3>TruCare desktop client</h3><p class="s-lede">New desktop client for a US health-insurance care-management platform serving millions of members. Angular 2 while it was still in release candidates.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">TruCare desktop client</span><span class="ph-p">projects/trucare-desktop-client.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>A care-management platform used by millions needed a new desktop client, on a framework that was changing under our feet every release candidate.</p><h4>Bet</h4><p>A clean architecture that could absorb the framework's churn: Redux-pattern state, a custom component set over Angular Material, and a testing strategy defined before the first screen.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">TruCare desktop client, the idea</span><span class="ph-p">projects/trucare-desktop-client-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Angular 2</span><span class="chip">SASS</span><span class="chip">Angular CLI</span><span class="chip">Redux pattern</span><span class="chip">Angular Material</span><span class="chip">Jasmine / Karma</span><span class="chip">Protractor</span><span class="chip">REST</span></div><h4>How it is built</h4><p>Led architecture and development from Prague for a US team six time zones away, and mentored the team on Angular and the wider stack.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">TruCare desktop client, the stack</span><span class="ph-p">projects/trucare-desktop-client-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>shipped</dd></div><div class="row"><dt>My role</dt><dd>Lead developer and architect, Scrum Master for a five-person US team</dd></div><div class="row"><dt>When</dt><dd>2016 to 2017</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=TruCare%20desktop%20client">Ask me about TruCare desktop client →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-primaerp" aria-label="PrimaERP">
+  <div class="deck-bar"><span class="slug">PrimaERP · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">cloud ERP, 2012 · 2012 to 2015</p><h3>PrimaERP</h3><p class="s-lede">Cloud ERP for small and medium teams: time tracking, billing and attendance. Angular 1.x against a Java API on AWS, and a React prototype before most of Prague had heard of it.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">PrimaERP</span><span class="ph-p">projects/primaerp.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Small teams tracked time and billed clients in spreadsheets. Cloud ERP for them barely existed.</p><h4>Bet</h4><p>A browser-first ERP with the modules a small team actually uses first: time tracking, billing, attendance.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">PrimaERP, the idea</span><span class="ph-p">projects/primaerp-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Angular 1.x</span><span class="chip">JavaScript</span><span class="chip">Grails / Groovy</span><span class="chip">Java REST API</span><span class="chip">AWS</span><span class="chip">React + Flux prototype</span></div><h4>How it is built</h4><p>Delivered the time-tracking, billing and attendance modules and prototyped the next-generation stack in React and Flux.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">PrimaERP, the stack</span><span class="ph-p">projects/primaerp-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>shipped</dd></div><div class="row"><dt>My role</dt><dd>Core front-end developer</dd></div><div class="row"><dt>When</dt><dd>2012 to 2015</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=PrimaERP">Ask me about PrimaERP →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-abcam-web-platform" aria-label="Abcam web platform">
+  <div class="deck-bar"><span class="slug">Abcam web platform · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">life sciences, 2020 · 2020 to 2021</p><h3>Abcam web platform</h3><p class="s-lede">Front-end for a global life-sciences company's web platform, delivered through EPAM. Started as an engineer, promoted to lead a team of four.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Abcam web platform</span><span class="ph-p">projects/abcam-web-platform.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>A global life-sciences catalogue and platform, mid-pandemic, when life sciences suddenly mattered to everyone.</p><h4>Bet</h4><p>Own code quality, delivery and mentoring for a small team inside a large delivery organisation.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Abcam web platform, the idea</span><span class="ph-p">projects/abcam-web-platform-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">EPAM delivery process</span><span class="chip">Code review and mentoring</span></div><h4>How it is built</h4><p>Promoted to team lead within the engagement, guiding a team of four.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Abcam web platform, the stack</span><span class="ph-p">projects/abcam-web-platform-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>shipped</dd></div><div class="row"><dt>My role</dt><dd>Front-end engineer, then front-end team lead</dd></div><div class="row"><dt>When</dt><dd>2020 to 2021</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Abcam%20web%20platform">Ask me about Abcam web platform →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-food-events-mvp" aria-label="Food-events MVP">
+  <div class="deck-bar"><span class="slug">Food-events MVP · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">social platform, 2020 · Mar to Aug 2020</p><h3>Food-events MVP</h3><p class="s-lede">MVP of a social platform connecting people through food events and hosting: event management, finances, payments, guest and host communication. Launched into the one year nobody could host dinner.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Food-events MVP</span><span class="ph-p">projects/food-events-mvp.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>People wanted to eat together at a stranger's table. Nothing handled the event, the money and the conversation in one place.</p><h4>Bet</h4><p>Ship a real MVP fast: React with Hooks, real payments, real tests, Kanban delivery.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Food-events MVP, the idea</span><span class="ph-p">projects/food-events-mvp-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">React 16</span><span class="chip">Hooks</span><span class="chip">Redux</span><span class="chip">styled-components</span><span class="chip">REST with axios and JWT</span><span class="chip">Google Maps and OpenStreetMap</span><span class="chip">React Testing Library</span><span class="chip">Cypress</span><span class="chip">Azure DevOps</span></div><h4>How it is built</h4><p>Unit and end-to-end tests from the start. Delivered through Azure DevOps and Kanban.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Food-events MVP, the stack</span><span class="ph-p">projects/food-events-mvp-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>MVP delivered</dd></div><div class="row"><dt>My role</dt><dd>Senior front-end developer in a cross-functional team of five</dd></div><div class="row"><dt>When</dt><dd>Mar to Aug 2020</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Food-events%20MVP">Ask me about Food-events MVP →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog><dialog class="deck" id="deck-alex" aria-label="Alex">
+  <div class="deck-bar"><span class="slug">Alex · <span class="deck-n">1</span>/4</span><button class="deck-x" type="button" data-close aria-label="Close">Esc ×</button></div>
+  <div class="track"><div class="slide cover"><div class="s-text"><p class="slug">hospitality, 2015 · 2015 to 2016</p><h3>Alex</h3><p class="s-lede">Property-management system for small hoteliers. First time as founder, first time paying for my own architecture decisions.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Alex</span><span class="ph-p">projects/alex.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The idea</p><h4>Problem</h4><p>Small and medium hoteliers ran on a spreadsheet and a phone while Booking.com and Airbnb ate the market from both sides.</p><h4>Bet</h4><p>A property-management system built for them: single-page app, real-time sync, multilingual from day one.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Alex, the idea</span><span class="ph-p">projects/alex-2.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">The stack</p><div class="chips"><span class="chip">Angular 1.5</span><span class="chip">Angular Material</span><span class="chip">Node.js and Express</span><span class="chip">PostgreSQL</span><span class="chip">Socket.IO</span><span class="chip">Webpack</span></div><h4>How it is built</h4><p>First time as founder. First time paying for my own architecture decisions.</p></div><figure class="frame-img ph s-img" aria-label="Image placeholder"><span class="ph-l">Alex, the stack</span><span class="ph-p">projects/alex-3.jpg</span></figure></div><div class="slide"><div class="s-text"><p class="slug">Where it stands</p><dl class="manual"><div class="row"><dt>Status</dt><dd>retired</dd></div><div class="row"><dt>My role</dt><dd>Co-founder, architect, full-stack</dd></div><div class="row"><dt>When</dt><dd>2015 to 2016</dd></div></dl><p class="s-cta"><a class="btn" href="mailto:denishavranek@gmail.com?subject=Alex">Ask me about Alex →</a></p></div></div></div>
+  <div class="deck-nav"><button type="button" data-prev aria-label="Previous slide">←</button><span class="dots"><i class="on"></i><i></i><i></i><i></i></span><button type="button" data-next aria-label="Next slide">→</button></div>
+</dialog>
+<footer><span>Denis Havranek · built from one JSON file</span><span>updated 2026-09-29</span></footer>
+</main>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('clock'),d=document.getElementById('doing');
+  function tick(){try{var n=new Date();var t=n.toLocaleTimeString('en-GB',{timeZone:'Europe/Prague',hour:'2-digit',minute:'2-digit'});c.textContent=t;var h=+t.slice(0,2);d.textContent=h<7?'Asleep, hopefully.':h<12?'Deep work. Email lands later.':h<18?'Calls and reviews.':h<22?'Scratch lessons or a cut in progress.':'Winding down.';}catch(e){}}
+  tick();setInterval(tick,30000);
+  document.querySelectorAll('.show-open,[data-deck].linkish').forEach(function(btn){btn.addEventListener('click',function(){var d=document.getElementById('deck-'+btn.dataset.deck);if(d)openDeck(d);});});
+  function openDeck(d){var track=d.querySelector('.track'),slides=[].slice.call(track.children),i=0,n=d.querySelector('.deck-n'),dots=[].slice.call(d.querySelectorAll('.dots i'));
+    function go(k){i=Math.max(0,Math.min(slides.length-1,k));track.style.transform='translateX('+(-i*100)+'%)';n.textContent=i+1;dots.forEach(function(x,j){x.classList.toggle('on',j===i)});}
+    function key(e){if(e.key==='ArrowRight')go(i+1);else if(e.key==='ArrowLeft')go(i-1);}
+    var x0=null;
+    d.querySelector('[data-next]').onclick=function(){go(i+1)};d.querySelector('[data-prev]').onclick=function(){go(i-1)};d.querySelector('[data-close]').onclick=function(){d.close()};
+    d.addEventListener('click',function(e){if(e.target===d)d.close()});
+    track.ontouchstart=function(e){x0=e.touches[0].clientX};track.ontouchend=function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null};
+    d.addEventListener('keydown',key);d.addEventListener('close',function(){document.body.style.overflow='';d.removeEventListener('keydown',key)},{once:true});
+    document.body.style.overflow='hidden';go(0);d.showModal();}
+  var chips=[].slice.call(document.querySelectorAll('.chip.tech')),shows=[].slice.call(document.querySelectorAll('.show')),walls=[].slice.call(document.querySelectorAll('.shows'));
+  chips.forEach(function(c){c.addEventListener('click',function(){var on=c.getAttribute('aria-pressed')==='true';chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    if(on||!c.dataset.hits){walls.forEach(function(w){w.classList.remove('filtering')});shows.forEach(function(s){s.classList.remove('hit')});return;}
+    c.setAttribute('aria-pressed','true');var hits=c.dataset.hits.split(' ');walls.forEach(function(w){w.classList.add('filtering')});shows.forEach(function(s){s.classList.toggle('hit',hits.indexOf(s.id.replace('show-',''))>-1)});
+    var f=document.querySelector('.show.hit');if(f)f.scrollIntoView({behavior:'smooth',block:'center'});});});
+  var links=[].slice.call(document.querySelectorAll('.rail nav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current')});var a=links[secs.indexOf(e.target)];if(a)a.setAttribute('aria-current','true');}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(function(s){io.observe(s)});}
+})();
+</script>
+</body>
+</html>

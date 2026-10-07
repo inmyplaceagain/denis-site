@@ -1,0 +1,13 @@
+{
+  "name": "denis-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "interview": "node interview.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "zod": "^3.23.0"
+  }
+}

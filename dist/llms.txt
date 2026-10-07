@@ -1,0 +1,87 @@
+# Denis Havranek
+
+> Denis Havranek is a Prague-based hands-on technical lead and full-stack engineer with 14+ years of experience, strongest in Angular, React, Next.js, TypeScript and Node, with team leadership up to 15 people and enterprise, fintech and health-insurance domain experience. Since 2023 he uses AI coding agents daily in a governed, human-in-the-loop way and co-founded BridgeOS around that practice. Currently full-time on an AI movie studio and consulting for a Boston fintech. Open to technical lead or senior front-end roles, AI-delivery consulting, co-building products, or a thirty-minute conversation. Languages: Spanish and Czech native, English fluent.
+
+Location: Prague, Czech Republic
+Languages: Spanish (native), Czech (native), English (fluent)
+Contact: denishavranek@gmail.com (Email. Put the real question in the first line.)
+Structured profile: /profile.json
+
+## Values
+- Honest over impressive: I would rather show a thin end-to-end slice that works than a deep demo that hides what is missing. My studio's domain has a typo on purpose. Imperfect, like life.
+- Standards are a gift, not a gate: Every team I led got a shared architecture, a review habit and a Gitflow before it got a deadline. People do their best work when the ground is stable under them.
+- Keep the why: Specs, decisions and their reasons should survive the people who made them. BridgeOS exists because I watched too many projects lose the 'why' between the slide and the code.
+- Teach it to a kid: If I cannot explain it to a ten-year-old in a Scratch class, I do not understand it yet. Same test for Angular training: if the room is confused, the idea is not finished.
+
+## How I work
+Energised by: Turning a vague idea into something runnable in a day; Building a team with real chemistry, then getting out of its way; Complex data becoming an interface a client understands at a glance; Working across Spanish, Czech and English contexts, often in the same week; Dogfooding my own tools until they break
+Drained by: Status theatre and slides that score better than reality; Decisions with no owner and no reason attached; Rewrites nobody is allowed to finish; Meetings that could have been a written decision
+- Best way to reach me: Email with the actual question in the first line. I answer in kind.
+- How I give feedback: Direct, specific, about the work, usually in a code review. I assume you want to know.
+- How I want feedback: The same. Tell me the thing. I will not take it personally.
+- How I lead: Hire well, set the architecture and the standards early, review everything at the start, then trust. A team of fifteen ran that way for three years.
+- AI in my workflow: Daily, governed, with a human ratifying anything that ships. Claude Code mostly, local models when budget or data says so.
+- When I am wrong: I change my mind in public. Ask me what I got wrong last month.
+
+## Timeline
+- 2005 to 2011: Economics school, but the computer lab (Prague University of Economics and Business). Master's in Information Technology and Systems, minor in Insurance. From 2008 I was already freelancing as a web and graphic designer: e-shops, Drupal builds, print, a career portal for a client in Uruguay. The degree taught me how businesses think. The freelancing taught me how they actually pay. Context: Prague had joined the EU a year before I started. The iPhone arrived in 2007, the financial crisis in 2008. jQuery was the framework. Nobody called themselves a front-end engineer yet.
+- 2011 to 2012: First real code, first real users (Elephant Orchestra · Semantic Visions · Elephant Traffic). HTML and CSS coder who became a PHP programmer on Zend: the Uspory.cz savings portal and a loan comparator for Slovakia. Then a real-time, highly interactive front-end for IQalerts, which is where JavaScript stopped being decoration and became the product. Context: Backbone and the first single-page apps. Node.js was new and slightly suspicious. The browser was becoming a runtime and most companies had not noticed.
+- 2012 to 2015: Cloud ERP, before it was obvious (ABRA Software, Prague). Core front-end developer on PrimaERP, a cloud ERP for small teams: time tracking, billing, attendance. Angular 1.x against a Java REST API on AWS, with Grails and Groovy in the mix. I prototyped the next stack in React and Flux before most of Prague had heard of either. Context: AngularJS won, then React showed up in 2013 and everyone argued. Slack launched. 'Move to the cloud' went from pitch to plan for small businesses.
+- 2015 to 2016: Founder for the first time (AlexApp.io, Prague). Co-founded Alex, a property-management system for small and medium hoteliers. I owned architecture and every technology decision: Angular 1.5 components, Node and Express on PostgreSQL, real-time sync over Socket.IO, i18n from day one. I learned what a product costs when you are the one paying. Context: Airbnb was eating the small-hotel market from below and Booking.com from above. Every hotelier was a spreadsheet and a phone. The market was right, the timing for a two-person team was hard.
+- 2016 to 2017: Regulated, at scale (Casenet (Zyter), Prague, for a US health-insurance platform). Led development and architecture of a new desktop client for TruCare, serving millions of members. Angular 2 while it was still in release candidates, a Redux-pattern state layer, a custom component set, a real testing strategy. Scrum Master for a five-person US team from six time zones away. Context: Angular 2 shipped in September 2016 and broke everything Angular 1 knew. US healthcare was mid-ACA and every payer was rebuilding. Remote-first teams were still an oddity.
+- 2017 to 2020: Fifteen people, twenty-five countries (NEORIS, Prague, for Cemex GO). Front-end lead on Cemex GO, the flagship of a global cement company's digital transformation. Built and led a team of up to fifteen on Orders and Schedule, the platform's most complex service, across Monterrey, Prague and Gurgaon. Directed a full rewrite of all client apps while releases kept shipping, set a shared architecture across three apps, introduced Gitflow, ran the technical interviews, helped open the Prague office. The best team I have been part of. Years later I turned the whole genre of 'digital transformation' into a satirical game, because I had lived enough of it to write the exit interview. Context: Every incumbent was buying a 'Netflix of X' deck. Digital transformation was the phrase of the decade. Prague became a nearshoring hub and distributed teams across three continents became normal.
+- 2020 to 2021: The pandemic years: an MVP and a life-sciences lead (Freelance, then EPAM for Abcam, Prague). Spring 2020: built the MVP of a social platform connecting people through food events and hosting, React 16 with Hooks, Redux, Cypress, in a cross-functional team of five. Launched into the one year nobody could host dinner. Then EPAM: front-end engineer for Abcam, a global life-sciences company, promoted to lead a team of four. Context: Lockdowns. Remote-everything. Life sciences was suddenly the most important industry on earth, and hospitality the most fragile. A lot of office work turned out to be ritual.
+- 2021 to now: Fintech interfaces, and AI enters the workflow (Independent consultant, primarily FinMason (Boston), from Prague). Long-term engagement with an investment-analytics fintech serving wealth and asset managers. I own UX and front-end together: analytics dashboards, embeddable white-labeled experiences, Angular, React, StencilJS, Remix, Node. In 2023 I brought Claude and LLMs into the delivery process itself, for prototyping, development and code quality, and started thinking hard about how to do that responsibly. Context: ChatGPT in November 2022 kicked off the LLM wave. By 2024 coding agents could take a spec to a running app, and the question moved from 'can it code' to 'who governs what it builds'.
+
+## Skills
+- Front-end: Angular (2 to modern), React, Next.js, TypeScript, Remix, StencilJS, CSS/SASS
+- Back-end and APIs: Node.js, NestJS, Express, REST design and integrations, Prisma, PostgreSQL, PHP, Java, Go
+- Delivery: Git and Gitflow, CI/CD, Azure DevOps, Docker, AWS, DigitalOcean, Vultr, self-hosted Caddy and Gitea
+- Architecture and leadership: Front-end architecture, engineering standards, code review, teams of up to 15, technical interviewing, mentoring, Angular training
+- AI-assisted development: Governed, human-in-the-loop use of Claude Code and LLMs; agent tooling; spec- and architecture-driven builds; cloud and local models
+- Testing: Unit, React Testing Library, Cypress, Jasmine, Karma, Protractor
+- Domains: Fintech, health insurance, ERP, construction, hospitality, events, education, life sciences
+
+## Projects
+- BridgeOS [studio OS, in development]: AI-native product-spec workspace that builds the app from approved specs and keeps watching it in production. Event-sourced ledger, executable specs, human ratification gates. Spanish-first, local-first, built by dogfooding itself.
+- AI film harness and studio [AI film, active, full-time]: Resumable pipeline from idea to assembled short film, with a review studio: cast, shot grid, per-shot regenerate, provider swap, timeline.
+- Character Consistency Test [experiment, done]: The one experiment that decides whether an AI movie studio is buildable. Runs for under 30 euro, mostly on local hardware.
+- EventFlow / event-rene [fintech for events, pilot]: Closed-loop wallet, real-time control and loyalty for small event organisers and venues. The Starbucks app, white-labeled for anyone with a bar and a spreadsheet.
+- In My Place [personal growth, live]: A quiet space that listens. Journaling and growth companion with a RAG research tool for coaches and mental-health professionals. Live at inmy.place, 24 locales.
+- Adventure Maker [games, 1.0 shipped Sept 2026]: Anyone, kids included, builds and publishes point-and-click adventures in a six-step wizard. Monkey Island energy.
+- BINFINITY [satire game, playable]: A pixel-art corporate life-sim about a digital transformation that goes exactly as well as you expect. One HTML file, no network, 40 minutes a run. Written by someone who was there.
+- SchoolOS [education, prototype]: Teachers log observations across five spheres of a child's development, an AI co-pilot drafts framework-grounded feedback, parents get a portable portfolio.
+- BuildIT [construction ERP, prototype]: Field-to-cost backend in Go. Workers log daily reports from a PWA, managers see real costs the same day.
+- Cemex GO [enterprise, 2017 to 2020, shipped]: Orders and Schedule for a global B2B platform in 25 countries. Led up to fifteen front-end engineers and a full rewrite that never stopped shipping.
+- FinMason analytics [fintech, 2021 to now, in production]: Investment and portfolio-risk analytics for a Boston fintech and its wealth-management clients. Dashboards and embeddable white-labeled experiences, UX and front-end owned together.
+- TruCare desktop client [health insurance, 2016, shipped]: New desktop client for a US health-insurance care-management platform serving millions of members. Angular 2 while it was still in release candidates.
+- PrimaERP [cloud ERP, 2012, shipped]: Cloud ERP for small and medium teams: time tracking, billing and attendance. Angular 1.x against a Java API on AWS, and a React prototype before most of Prague had heard of it.
+- Abcam web platform [life sciences, 2020, shipped]: Front-end for a global life-sciences company's web platform, delivered through EPAM. Started as an engineer, promoted to lead a team of four.
+- Food-events MVP [social platform, 2020, MVP delivered]: MVP of a social platform connecting people through food events and hosting: event management, finances, payments, guest and host communication. Launched into the one year nobody could host dinner.
+- Alex [hospitality, 2015, retired]: Property-management system for small hoteliers. First time as founder, first time paying for my own architecture decisions.
+
+## Recommendations
+- "Denis is so far the best technical leader I've ever worked for. He put together an excellent team with great chemistry, mutual respect, trust, and a high level of skill." (Miroslav Gajdos, Full-Stack JavaScript Engineer)
+- "A master-level front-end engineer. He was front-end lead for a global application deployed to over 25 countries. A great move for the company to hire him." (Filip Hajek, Lead Full-Stack Engineer)
+- "One of those rare individuals where people skills and expertise meet at the right point. I was always extremely happy with the quality of his work and how he managed his projects and team." (Marek Vesely, CTO and General Manager, FinMason)
+- "He elevated the overall quality of the front-end standard and demonstrated leadership capabilities well beyond his role." (Federico Zablotzky, Technical Program Manager)
+
+## Interests
+- Point-and-click adventures: Monkey Island and Broken Sword shaped how I think about story, puzzles and humour. Adventure Maker exists so the next generation can make their own.
+- Film, and now making it: Not as a fan, as a practitioner learning the craft backwards: through the pipeline first, then the taste.
+- Teaching: Angular training for professionals, Scratch for ten-year-olds. Same job: find the one idea the room is missing.
+- Corporate anthropology: Why organisations say one thing and do another. I turned it into a game because a memo would not have been read.
+- Three languages, two homes: Spanish and Czech at home, English at work. A Uruguayan client in 2010, a Mexican team in 2018, a Boston client since 2021. Prague is where it all meets.
+- TODO: the non-work stuff: Sport, music, food, family, places. The things a colleague would know after a year of lunches.
+
+## Ways to collaborate
+- Lead or build your front-end: Angular, React or Next, in a regulated or enterprise setting. I have done it for health insurance, fintech and a global B2B platform. I set the standards and then write the code.
+- Bring AI into your delivery without losing control: Governed, human-in-the-loop use of coding agents. I have done it inside a fintech client's workflow and built BridgeOS around the lessons.
+- Build a product with me: You have a domain and a problem. I bring the studio and the harness. We ship a thin end-to-end slice in weeks, not a deck in months.
+- Join something I am building: The AI movie studio needs people who care about story and consistency more than about models. EventFlow needs someone who has run a bar or a festival.
+- Talk shop: Agent governance, spec-as-contract, front-end architecture, teaching programming to kids. Thirty minutes, no agenda, I will bring one question.
+- Point your agent at me: Everything on this page is also at /profile.json and /llms.txt. If your assistant is screening people, let it read the source.
+
+## Fit
+Good: Small or mid-size team, high trust, decisions with reasons; Hands-on lead role: architecture, standards, and still writing code; Regulated or enterprise front-ends that must be clear to non-technical users; Teams adopting AI coding agents that want governance, not chaos; Products for real operators: venues, schools, hotels, construction sites, kids
+Poor: Roles centred on reporting rather than building; Pure research with no shipping horizon; Places where the slide matters more than the product; Rewrites nobody is allowed to finish

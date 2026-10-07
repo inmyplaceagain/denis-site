@@ -1,0 +1,819 @@
+{
+  "identity": {
+    "name": "Denis Havranek",
+    "tagline": "Hands-on technical lead who has spent 14+ years building software and setting the standards teams build on. Now bringing governed AI into delivery — coding agents with human-in-the-loop gates, spec-driven builds, and the operating system to make it all accountable.",
+    "location": "Prague, Czech Republic",
+    "languages": [
+      "Spanish (native)",
+      "Czech (native)",
+      "English (fluent)"
+    ],
+    "email": "denishavranek@gmail.com",
+    "phone": "+420 774 880 505",
+    "links": {
+      "linkedin": "https://linkedin.com/in/dhavranek",
+      "github": "https://github.com/TODO"
+    }
+  },
+  "person": {
+    "intro": "LinkedIn tells you where I sat. A CV tells you what I was allowed to claim. Neither tells you what it is like to actually work with me, or what I was thinking about while all of that happened. This page tries to.",
+    "values": [
+      {
+        "title": "Honest over impressive",
+        "body": "I would rather show a thin end-to-end slice that works than a deep demo that hides what is missing. My studio's domain has a typo on purpose. Imperfect, like life."
+      },
+      {
+        "title": "Standards are a gift, not a gate",
+        "body": "Every team I led got a shared architecture, a review habit and a Gitflow before it got a deadline. People do their best work when the ground is stable under them."
+      },
+      {
+        "title": "Keep the why",
+        "body": "Specs, decisions and their reasons should survive the people who made them. BridgeOS exists because I watched too many projects lose the 'why' between the slide and the code."
+      },
+      {
+        "title": "Teach it to a kid",
+        "body": "If I cannot explain it to a ten-year-old in a Scratch class, I do not understand it yet. Same test for Angular training: if the room is confused, the idea is not finished."
+      }
+    ],
+    "howIWork": {
+      "energizedBy": [
+        "Turning a vague idea into something runnable in a day",
+        "Building a team with real chemistry, then getting out of its way",
+        "Complex data becoming an interface a client understands at a glance",
+        "Working across Spanish, Czech and English contexts, often in the same week",
+        "Dogfooding my own tools until they break"
+      ],
+      "drainedBy": [
+        "Status theatre and slides that score better than reality",
+        "Decisions with no owner and no reason attached",
+        "Rewrites nobody is allowed to finish",
+        "Meetings that could have been a written decision"
+      ],
+      "manual": [
+        {
+          "k": "Best way to reach me",
+          "v": "Email with the actual question in the first line. I answer in kind."
+        },
+        {
+          "k": "How I give feedback",
+          "v": "Direct, specific, about the work, usually in a code review. I assume you want to know."
+        },
+        {
+          "k": "How I want feedback",
+          "v": "The same. Tell me the thing. I will not take it personally."
+        },
+        {
+          "k": "How I lead",
+          "v": "Hire well, set the architecture and the standards early, review everything at the start, then trust. A team of fifteen ran that way for three years."
+        },
+        {
+          "k": "AI in my workflow",
+          "v": "Daily and central, not bolted on. Claude Code for development, local models when budget or data says so. Every AI output goes through a human ratification gate before it ships. I coach teams on this practice and built BridgeOS around it."
+        },
+        {
+          "k": "When I am wrong",
+          "v": "I change my mind in public. Ask me what I got wrong last month."
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "from": "2005",
+      "to": "2011",
+      "title": "Economics school, but the computer lab",
+      "where": "Prague University of Economics and Business",
+      "chapter": "Master's in Information Technology and Systems, minor in Insurance. From 2008 I was already freelancing as a web and graphic designer: e-shops, Drupal builds, print, a career portal for a client in Uruguay. The degree taught me how businesses think. The freelancing taught me how they actually pay.",
+      "world": "Prague had joined the EU a year before I started. The iPhone arrived in 2007, the financial crisis in 2008. jQuery was the framework. Nobody called themselves a front-end engineer yet."
+    },
+    {
+      "from": "2011",
+      "to": "2012",
+      "title": "First real code, first real users",
+      "where": "Elephant Orchestra · Semantic Visions · Elephant Traffic",
+      "chapter": "HTML and CSS coder who became a PHP programmer on Zend: the Uspory.cz savings portal and a loan comparator for Slovakia. Then a real-time, highly interactive front-end for IQalerts, which is where JavaScript stopped being decoration and became the product.",
+      "world": "Backbone and the first single-page apps. Node.js was new and slightly suspicious. The browser was becoming a runtime and most companies had not noticed."
+    },
+    {
+      "from": "2012",
+      "to": "2015",
+      "title": "Cloud ERP, before it was obvious",
+      "where": "ABRA Software, Prague",
+      "chapter": "Core front-end developer on PrimaERP, a cloud ERP for small teams: time tracking, billing, attendance. Angular 1.x against a Java REST API on AWS, with Grails and Groovy in the mix. I prototyped the next stack in React and Flux before most of Prague had heard of either.",
+      "world": "AngularJS won, then React showed up in 2013 and everyone argued. Slack launched. 'Move to the cloud' went from pitch to plan for small businesses."
+    },
+    {
+      "from": "2015",
+      "to": "2016",
+      "title": "Founder for the first time",
+      "where": "AlexApp.io, Prague",
+      "chapter": "Co-founded Alex, a property-management system for small and medium hoteliers. I owned architecture and every technology decision: Angular 1.5 components, Node and Express on PostgreSQL, real-time sync over Socket.IO, i18n from day one. I learned what a product costs when you are the one paying.",
+      "world": "Airbnb was eating the small-hotel market from below and Booking.com from above. Every hotelier was a spreadsheet and a phone. The market was right, the timing for a two-person team was hard."
+    },
+    {
+      "from": "2016",
+      "to": "2017",
+      "title": "Regulated, at scale",
+      "where": "Casenet (Zyter), Prague, for a US health-insurance platform",
+      "chapter": "Led development and architecture of a new desktop client for TruCare, serving millions of members. Angular 2 while it was still in release candidates, a Redux-pattern state layer, a custom component set, a real testing strategy. Scrum Master for a five-person US team from six time zones away.",
+      "world": "Angular 2 shipped in September 2016 and broke everything Angular 1 knew. US healthcare was mid-ACA and every payer was rebuilding. Remote-first teams were still an oddity."
+    },
+    {
+      "from": "2017",
+      "to": "2020",
+      "title": "Fifteen people, twenty-five countries",
+      "where": "NEORIS, Prague, for Cemex GO",
+      "chapter": "Front-end lead on Cemex GO, the flagship of a global cement company's digital transformation. Built and led a team of up to fifteen on Orders and Schedule, the platform's most complex service, across Monterrey, Prague and Gurgaon. Directed a full rewrite of all client apps while releases kept shipping, set a shared architecture across three apps, introduced Gitflow, ran the technical interviews, helped open the Prague office. The best team I have been part of. Years later I turned the whole genre of 'digital transformation' into a satirical game, because I had lived enough of it to write the exit interview.",
+      "world": "Every incumbent was buying a 'Netflix of X' deck. Digital transformation was the phrase of the decade. Prague became a nearshoring hub and distributed teams across three continents became normal."
+    },
+    {
+      "from": "2020",
+      "to": "2021",
+      "title": "The pandemic years: an MVP and a life-sciences lead",
+      "where": "Freelance, then EPAM for Abcam, Prague",
+      "chapter": "Spring 2020: built the MVP of a social platform connecting people through food events and hosting, React 16 with Hooks, Redux, Cypress, in a cross-functional team of five. Launched into the one year nobody could host dinner. Then EPAM: front-end engineer for Abcam, a global life-sciences company, promoted to lead a team of four.",
+      "world": "Lockdowns. Remote-everything. Life sciences was suddenly the most important industry on earth, and hospitality the most fragile. A lot of office work turned out to be ritual."
+    },
+    {
+      "from": "2021",
+      "to": "2024",
+      "title": "Fintech interfaces, and AI enters the workflow",
+      "where": "Independent consultant, primarily FinMason (Boston), from Prague",
+      "chapter": "Long-term engagement with an investment-analytics fintech serving wealth and asset managers. I own UX and front-end together: analytics dashboards, embeddable white-labeled experiences, Angular, React, StencilJS, Remix, Node. In 2023 I brought Claude Code and LLMs into the delivery process itself — for prototyping, development and code quality — coaching the team on responsible adoption with governance and human-in-the-loop practices. That experience became the seed of everything I am building now.",
+      "world": "ChatGPT in November 2022 kicked off the LLM wave. By 2024 coding agents could take a spec to a running app, and the question moved from 'can it code' to 'who governs what it builds'."
+    },
+    {
+      "from": "2025",
+      "to": "now",
+      "title": "AI-native, from the ground up",
+      "where": "Independent — Co-Founder, BridgeOS & Bulding Bridges studio, Prague",
+      "chapter": "Full-time on AI-augmented product development. Co-founding BridgeOS, a governed operating system for AI-assisted delivery: event-sourced architectural ledger, executable specs, LLM verification with human ratification gates. Simultaneously shipping AI-native products — a journaling app with RAG for coaches, an AI film studio with per-shot consistency pipelines, a point-and-click adventure maker, an education platform with AI co-pilot. Every product is built by dogfooding the governed AI workflow: Claude Code daily, local models when budget or data says so, specs as contracts, a human ratifying anything that ships.",
+      "world": "Coding agents went from autocomplete to autonomous multi-file builds. The frontier moved from 'can AI write code' to 'how do teams adopt AI without losing accountability'. Governance, not generation, became the bottleneck."
+    }
+  ],
+  "skills": [
+    {
+      "k": "AI adoption and governance",
+      "v": "Governed, human-in-the-loop AI-assisted delivery; Claude Code and LLM agents daily; spec-driven builds with ratification gates; RAG pipelines; image and video generation pipelines; coaching teams on responsible AI adoption; cloud and local models"
+    },
+    {
+      "k": "Front-end",
+      "v": "Angular (2 to modern), React, Next.js, TypeScript, Remix, StencilJS, CSS/SASS"
+    },
+    {
+      "k": "Back-end and APIs",
+      "v": "Node.js, NestJS, Express, REST design and integrations, Prisma, PostgreSQL, PHP, Java, Go"
+    },
+    {
+      "k": "Architecture and leadership",
+      "v": "Front-end architecture, engineering standards, code review, teams of up to 15, technical interviewing, mentoring, Angular training"
+    },
+    {
+      "k": "Agile and delivery",
+      "v": "Scrum (practitioner and SM), Kanban (certified KMP I), Gitflow, CI/CD, Azure DevOps, Docker, AWS, distributed team facilitation across time zones, retrospectives, delivery-flow optimization"
+    },
+    {
+      "k": "Coaching and team building",
+      "v": "Distributed teams up to 15, cross-cultural facilitation (ES/CZ/EN), mentoring, hiring, onboarding, team formation, continuous improvement, stakeholder alignment, digital transformation delivery"
+    },
+    {
+      "k": "Testing",
+      "v": "Unit, React Testing Library, Cypress, Jasmine, Karma, Protractor, Vitest"
+    },
+    {
+      "k": "Domains",
+      "v": "Fintech, health insurance, life sciences, ERP, construction, hospitality, events, education"
+    }
+  ],
+  "projects": [
+    {
+      "name": "BridgeOS",
+      "tag": "governed AI delivery",
+      "one": "A governed operating system for AI-assisted software delivery. Every spec becomes a structured contract the build agent must honour, every ambiguity gets resolved before code is written, every decision lands in an event-sourced ledger, and a human ratifies each gate. The answer to 'who governs what AI builds'.",
+      "status": "in development",
+      "deck": {
+        "year": "2025 to now",
+        "role": "Co-founder, architect, main builder",
+        "problem": "A build agent cannot reliably turn prose specs into a working app. Every ambiguity in the spec becomes a silent decision the agent makes for you, and nobody remembers why. Teams adopting AI lose accountability without a governance layer.",
+        "thesis": "Each ambiguity gets its own structured contract the build must honour. Specs move through phases (idea, business, product, UX, architecture, security, infra, development, testing), a human ratifies each gate, and an event-sourced ledger keeps the why forever. The tool I wish I had when I introduced AI at FinMason.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Go",
+          "SQLite",
+          "Docker",
+          "Claude Code",
+          "LM Studio (local models)",
+          "Event sourcing",
+          "Executable specs",
+          "Human ratification gates"
+        ],
+        "built": "Local-first: runs against LM Studio with no paid keys. Built by dogfooding itself: BridgeOS builds the apps in this list. Born from the lessons of introducing AI-assisted delivery inside a fintech workflow."
+      },
+      "kind": "pro"
+    },
+    {
+      "name": "AI film harness and studio",
+      "tag": "AI film",
+      "one": "Resumable pipeline from idea to assembled short film, with a review studio: cast, shot grid, per-shot regenerate, provider swap, timeline.",
+      "status": "active, full-time",
+      "deck": {
+        "year": "2026, full-time",
+        "role": "Founder, pipeline and studio",
+        "problem": "Video models can make a beautiful shot. They cannot make forty shots of the same person in the same story. The bottleneck is not the model, it is consistency, taste and pipeline discipline.",
+        "thesis": "A resumable pipeline from idea to cut, with a review surface at every stage so a human approves before anything expensive runs. Provider-agnostic: swap models per shot.",
+        "stack": [
+          "Python harness",
+          "Next.js studio",
+          "Per-stage approval",
+          "Character sheets",
+          "Keyframes and video renders",
+          "Lip sync and QC",
+          "Provider catalog and key vault"
+        ],
+        "built": "The harness runs the pipeline and resumes from any stage. The studio shows the project board, cast, shot grid with per-shot regenerate, timeline scrubber and live run log."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "Character Consistency Test",
+      "tag": "experiment",
+      "one": "The one experiment that decides whether an AI movie studio is buildable. Runs for under 30 euro, mostly on local hardware.",
+      "status": "done",
+      "deck": {
+        "year": "2026",
+        "role": "Designed and ran it",
+        "problem": "Does one character's identity survive across roughly forty varied shots, different angles, lighting, shot sizes and wardrobe, well enough that an audience reads it as one person?",
+        "thesis": "If yes, an AI movie studio is an engineering problem. If no, nothing downstream matters. So run this first, for under thirty euro, before building anything else.",
+        "stack": [
+          "Local image generation",
+          "Identity references",
+          "Scored shot matrix",
+          "One paid animation stage, 3 to 4 shots"
+        ],
+        "built": "Stages one to three run on my own hardware. Only the animation stage touches a paid API."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "EventFlow / event-rene",
+      "tag": "fintech for events",
+      "one": "Closed-loop wallet, real-time control and loyalty for small event organisers and venues. The Starbucks app, white-labeled for anyone with a bar and a spreadsheet.",
+      "status": "pilot",
+      "deck": {
+        "year": "2025 to now",
+        "role": "Founder, product and full-stack",
+        "problem": "Small event organisers, bars, pop-ups and promoters reconcile in a Sunday spreadsheet. They cannot see sales per staff member and lose money without knowing where.",
+        "thesis": "A white-label closed-loop wallet: every organiser gets a branded wallet, real-time control and a loyalty engine across events and venues. The Starbucks app for anyone with a bar.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "PostgreSQL",
+          "Closed-loop wallet ledger",
+          "Staff sales screen",
+          "Real-time revenue and inventory"
+        ],
+        "built": "Organisers publish events and products, attendees load a wallet, staff debit it at the bar, venue admins watch revenue live. Now in pilot with a first organiser."
+      },
+      "kind": "pro"
+    },
+    {
+      "name": "In My Place",
+      "tag": "personal growth",
+      "one": "A quiet space that listens. AI-powered personal growth companion with journaling, an 8-agent expert council, a tapestry profiling engine, RAG-based research, a therapeutic frequency instrument, and adaptive design that calms itself when the person needs it. Live at inmy.place, 24 locales, iOS and Android.",
+      "status": "live",
+      "deck": {
+        "year": "2025 to now",
+        "role": "Founder, product, design, full-stack, AI architecture",
+        "problem": "The world is noisy and polarised. People never got taught the inner skills, and the tools that exist are loud.",
+        "thesis": "A quiet space that listens: AI-guided onboarding learns who you are, journaling with streaming AI reflections, an expert council of 8-10 specialised agents collaborating on your questions, a tapestry engine that compounds all interaction data into an 11-field psychological profile, and a RAG research layer backed by FTS5 and web search. Adaptive design reads motion, contrast and chrome preferences and calms itself when the person needs it. Crisis detection in 24 locales.",
+        "stack": [
+          "Next.js 16 (App Router)",
+          "React 19",
+          "TypeScript",
+          "Tailwind 4",
+          "SQLite (WAL, AES-256-GCM encryption)",
+          "Multi-provider AI router (Anthropic, Gemini, Grok)",
+          "RAG with FTS5 and hybrid retrieval",
+          "8-10 specialised AI agents (expert council)",
+          "Tapestry profiling engine",
+          "Capacitor (iOS and Android)",
+          "On-device AI (Apple FoundationModels, Gemini Nano)",
+          "On-device STT (SFSpeechRecognizer, SpeechRecognizer)",
+          "WebGL frequency instrument with binaural beats",
+          "24 locales with crisis detection",
+          "Hetzner ARM, Caddy, Docker, Ollama (local LLM)"
+        ],
+        "built": "Live at inmy.place. Dark default, light first-class, origami-style reveals, motion and contrast that respond to the person's state. Native iOS and Android shells via Capacitor with on-device AI for offline reflections. Self-hosted with local Ollama models alongside cloud providers."
+      },
+      "kind": "pro"
+    },
+    {
+      "name": "Adventure Maker",
+      "tag": "games",
+      "one": "Anyone, kids included, builds and publishes point-and-click adventures in a six-step wizard. Monkey Island energy.",
+      "status": "1.0 shipped Sept 2026",
+      "deck": {
+        "year": "2026",
+        "role": "Founder, everything",
+        "problem": "Kids who grew up on Monkey Island energy have no way to make their own point-and-click adventure without learning an engine.",
+        "thesis": "A six-step wizard: write, place, wire, playtest instantly with illustrated placeholder art, render in a chosen style, publish to a platform-exclusive catalogue.",
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Vitest",
+          "Docker and Caddy",
+          "Placeholder art pipeline",
+          "Style rendering"
+        ],
+        "built": "Version 1.0 shipped in September 2026. Open questions: render costs and a sketch-only tier."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "BINFINITY",
+      "tag": "satire game",
+      "one": "A pixel-art corporate life-sim about a digital transformation that goes exactly as well as you expect. One HTML file, no network, 40 minutes a run. Written by someone who was there.",
+      "status": "playable",
+      "deck": {
+        "year": "2025",
+        "role": "Writer, designer, developer",
+        "problem": "Everyone who lived a corporate digital transformation knows the slide and the reality drift apart. A memo about it would not be read.",
+        "thesis": "A pixel-art life-sim: twenty days at a waste company on project BINFINITY, the Netflix of Trash. Four acts, an acquisition, a layoff email, and an exit interview that scores what the slide said against what was real.",
+        "stack": [
+          "One HTML file",
+          "Vite build",
+          "Pixel art",
+          "No network, no analytics"
+        ],
+        "built": "About forty minutes a run. Written by someone who was in the room for the real thing."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "SchoolOS",
+      "tag": "education",
+      "one": "Teachers log observations across five spheres of a child's development, an AI co-pilot drafts framework-grounded feedback, parents get a portable portfolio.",
+      "status": "prototype",
+      "deck": {
+        "year": "2025",
+        "role": "Architect and builder",
+        "problem": "Teachers see a child across academic, emotional, social, physical and interest spheres. Parents get a grade. Nothing in between is captured or shared.",
+        "thesis": "Teachers log observations, an AI co-pilot drafts framework-grounded feedback the teacher approves, parents get actionable home tips and a portable developmental portfolio.",
+        "stack": [
+          "Go modular monolith",
+          "Bounded contexts",
+          "Next.js",
+          "AI co-pilot with teacher approval"
+        ],
+        "built": "Human approval before anything reaches a parent, by design."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "BuildIT",
+      "tag": "construction ERP",
+      "one": "Field-to-cost backend in Go. Workers log daily reports from a PWA, managers see real costs the same day.",
+      "status": "prototype",
+      "deck": {
+        "year": "2025",
+        "role": "Architect and backend",
+        "problem": "Construction managers learn the real cost of a site at month end. Field workers log on paper.",
+        "thesis": "Field workers log hours, materials, photos and incidents from a mobile PWA; managers see cost the same day and export month-end reports.",
+        "stack": [
+          "Go 1.26",
+          "Gin",
+          "SQLite without CGO",
+          "JWT with refresh rotation",
+          "Next.js PWA"
+        ],
+        "built": "Field-to-cost in one backend, separate surfaces for field and office."
+      },
+      "kind": "lab"
+    },
+    {
+      "name": "Cemex GO",
+      "tag": "enterprise, 2017 to 2020",
+      "one": "Orders and Schedule for a global B2B platform in 25 countries. Led up to fifteen front-end engineers and a full rewrite that never stopped shipping.",
+      "status": "shipped",
+      "deck": {
+        "year": "2017 to 2020",
+        "role": "Front-end lead, team of up to 15",
+        "problem": "A global cement company's customers ordered by phone and fax across twenty-five countries. The flagship of its digital transformation had to work everywhere at once.",
+        "thesis": "One shared front-end architecture across three client apps, a full rewrite that never stopped shipping, and a team across Monterrey, Prague and Gurgaon that actually liked working together.",
+        "stack": [
+          "Angular",
+          "TypeScript",
+          "Shared component architecture",
+          "Gitflow",
+          "Distributed agile"
+        ],
+        "built": "Orders and Schedule, the platform's most complex service. Introduced Gitflow, ran technical interviews, helped open the Prague office."
+      },
+      "kind": "pro"
+    },
+    {
+      "name": "FinMason analytics",
+      "tag": "fintech, 2021 to now",
+      "kind": "pro",
+      "one": "Investment and portfolio-risk analytics for a Boston fintech and its wealth-management clients. Dashboards and embeddable white-labeled experiences, UX and front-end owned together.",
+      "status": "in production",
+      "deck": {
+        "year": "2021 to now",
+        "role": "Independent consultant, UX/UI and front-end",
+        "problem": "Institutional-grade risk analytics is only useful if an adviser and their client can read it in a meeting. The data was there. The interfaces were not.",
+        "thesis": "Own the UX and the front-end as one job: turn complex financial data into clear, client-ready screens, and make them embeddable so downstream firms can white-label them.",
+        "stack": [
+          "Angular",
+          "React",
+          "StencilJS",
+          "Remix",
+          "TypeScript",
+          "Node.js",
+          "Prisma",
+          "Claude Code in the delivery process"
+        ],
+        "built": "Multiple Angular solutions on the platform. In 2023 I brought Claude Code and LLMs into the delivery process for prototyping, development and code quality."
+      }
+    },
+    {
+      "name": "TruCare desktop client",
+      "tag": "health insurance, 2016",
+      "kind": "pro",
+      "one": "New desktop client for a US health-insurance care-management platform serving millions of members. Angular 2 while it was still in release candidates.",
+      "status": "shipped",
+      "deck": {
+        "year": "2016 to 2017",
+        "role": "Lead developer and architect, Scrum Master for a five-person US team",
+        "problem": "A care-management platform used by millions needed a new desktop client, on a framework that was changing under our feet every release candidate.",
+        "thesis": "A clean architecture that could absorb the framework's churn: Redux-pattern state, a custom component set over Angular Material, and a testing strategy defined before the first screen.",
+        "stack": [
+          "Angular 2",
+          "SASS",
+          "Angular CLI",
+          "Redux pattern",
+          "Angular Material",
+          "Jasmine / Karma",
+          "Protractor",
+          "REST"
+        ],
+        "built": "Led architecture and development from Prague for a US team six time zones away, and mentored the team on Angular and the wider stack."
+      }
+    },
+    {
+      "name": "PrimaERP",
+      "tag": "cloud ERP, 2012",
+      "kind": "pro",
+      "one": "Cloud ERP for small and medium teams: time tracking, billing and attendance. Angular 1.x against a Java API on AWS, and a React prototype before most of Prague had heard of it.",
+      "status": "shipped",
+      "deck": {
+        "year": "2012 to 2015",
+        "role": "Core front-end developer",
+        "problem": "Small teams tracked time and billed clients in spreadsheets. Cloud ERP for them barely existed.",
+        "thesis": "A browser-first ERP with the modules a small team actually uses first: time tracking, billing, attendance.",
+        "stack": [
+          "Angular 1.x",
+          "JavaScript",
+          "Grails / Groovy",
+          "Java REST API",
+          "AWS",
+          "React + Flux prototype"
+        ],
+        "built": "Delivered the time-tracking, billing and attendance modules and prototyped the next-generation stack in React and Flux."
+      }
+    },
+    {
+      "name": "Abcam web platform",
+      "tag": "life sciences, 2020",
+      "kind": "pro",
+      "one": "Front-end for a global life-sciences company's web platform, delivered through EPAM. Started as an engineer, promoted to lead a team of four.",
+      "status": "shipped",
+      "deck": {
+        "year": "2020 to 2021",
+        "role": "Front-end engineer, then front-end team lead",
+        "problem": "A global life-sciences catalogue and platform, mid-pandemic, when life sciences suddenly mattered to everyone.",
+        "thesis": "Own code quality, delivery and mentoring for a small team inside a large delivery organisation.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "EPAM delivery process",
+          "Code review and mentoring"
+        ],
+        "built": "Promoted to team lead within the engagement, guiding a team of four."
+      }
+    },
+    {
+      "name": "Food-events MVP",
+      "tag": "social platform, 2020",
+      "kind": "pro",
+      "one": "MVP of a social platform connecting people through food events and hosting: event management, finances, payments, guest and host communication. Launched into the one year nobody could host dinner.",
+      "status": "MVP delivered",
+      "deck": {
+        "year": "Mar to Aug 2020",
+        "role": "Senior front-end developer in a cross-functional team of five",
+        "problem": "People wanted to eat together at a stranger's table. Nothing handled the event, the money and the conversation in one place.",
+        "thesis": "Ship a real MVP fast: React with Hooks, real payments, real tests, Kanban delivery.",
+        "stack": [
+          "React 16",
+          "Hooks",
+          "Redux",
+          "styled-components",
+          "REST with axios and JWT",
+          "Google Maps and OpenStreetMap",
+          "React Testing Library",
+          "Cypress",
+          "Azure DevOps"
+        ],
+        "built": "Unit and end-to-end tests from the start. Delivered through Azure DevOps and Kanban."
+      }
+    },
+    {
+      "name": "Alex",
+      "tag": "hospitality, 2015",
+      "one": "Property-management system for small hoteliers. First time as founder, first time paying for my own architecture decisions.",
+      "status": "retired",
+      "deck": {
+        "year": "2015 to 2016",
+        "role": "Co-founder, architect, full-stack",
+        "problem": "Small and medium hoteliers ran on a spreadsheet and a phone while Booking.com and Airbnb ate the market from both sides.",
+        "thesis": "A property-management system built for them: single-page app, real-time sync, multilingual from day one.",
+        "stack": [
+          "Angular 1.5",
+          "Angular Material",
+          "Node.js and Express",
+          "PostgreSQL",
+          "Socket.IO",
+          "Webpack"
+        ],
+        "built": "First time as founder. First time paying for my own architecture decisions."
+      },
+      "kind": "pro"
+    }
+  ],
+  "into": [
+    {
+      "title": "Point-and-click adventures",
+      "body": "Monkey Island and Broken Sword shaped how I think about story, puzzles and humour. Adventure Maker exists so the next generation can make their own."
+    },
+    {
+      "title": "Film, and now making it",
+      "body": "Not as a fan, as a practitioner learning the craft backwards: through the pipeline first, then the taste."
+    },
+    {
+      "title": "Teaching",
+      "body": "Angular training for professionals, Scratch for ten-year-olds. Same job: find the one idea the room is missing."
+    },
+    {
+      "title": "Corporate anthropology",
+      "body": "Why organisations say one thing and do another. I turned it into a game because a memo would not have been read."
+    },
+    {
+      "title": "Three languages, two homes",
+      "body": "Spanish and Czech at home, English at work. A Uruguayan client in 2010, a Mexican team in 2018, a Boston client since 2021. Prague is where it all meets."
+    },
+    {
+      "title": "TODO: the non-work stuff",
+      "body": "Sport, music, food, family, places. The things a colleague would know after a year of lunches.",
+      "todo": true
+    }
+  ],
+  "voices": [
+    {
+      "quote": "Denis is so far the best technical leader I've ever worked for. He put together an excellent team with great chemistry, mutual respect, trust, and a high level of skill.",
+      "who": "Miroslav Gajdos",
+      "role": "Full-Stack JavaScript Engineer"
+    },
+    {
+      "quote": "A master-level front-end engineer. He was front-end lead for a global application deployed to over 25 countries. A great move for the company to hire him.",
+      "who": "Filip Hajek",
+      "role": "Lead Full-Stack Engineer"
+    },
+    {
+      "quote": "One of those rare individuals where people skills and expertise meet at the right point. I was always extremely happy with the quality of his work and how he managed his projects and team.",
+      "who": "Marek Vesely",
+      "role": "CTO and General Manager, FinMason"
+    },
+    {
+      "quote": "He elevated the overall quality of the front-end standard and demonstrated leadership capabilities well beyond his role.",
+      "who": "Federico Zablotzky",
+      "role": "Technical Program Manager"
+    }
+  ],
+  "together": [
+    {
+      "title": "Bring AI into your delivery without losing control",
+      "body": "I have introduced governed, human-in-the-loop AI adoption inside a fintech client's workflow — coaching the team on responsible use, setting up governance practices, and measuring the impact. Then I built BridgeOS around those lessons: spec-driven builds, ratification gates, and an event-sourced ledger that keeps the why. I can help your team adopt AI agents without losing accountability."
+    },
+    {
+      "title": "Build AI-native products with me",
+      "body": "Multi-agent systems, RAG pipelines, on-device AI, provider routing, safety layers. I have shipped a live product with all of these at inmy.place. If you need someone who has built the full stack from LLM orchestration to encrypted local storage to App Store submission, let's talk."
+    },
+    {
+      "title": "Lead or build your front-end",
+      "body": "Angular, React or Next, in a regulated or enterprise setting. I have done it for health insurance, fintech and a global B2B platform. I set the standards and then write the code."
+    },
+    {
+      "title": "Build a product with me",
+      "body": "You have a domain and a problem. I bring the studio and the harness. We ship a thin end-to-end slice in weeks, not a deck in months."
+    },
+    {
+      "title": "Join something I am building",
+      "body": "The AI movie studio needs people who care about story and consistency more than about models. EventFlow needs someone who has run a bar or a festival."
+    },
+    {
+      "title": "Talk shop",
+      "body": "Agent governance, spec-as-contract, front-end architecture, teaching programming to kids. Thirty minutes, no agenda, I will bring one question."
+    },
+    {
+      "title": "Point your agent at me",
+      "body": "Everything on this page is also at /profile.json and /llms.txt. If your assistant is screening people, let it read the source."
+    }
+  ],
+  "agent": {
+    "summaryHint": "Denis Havranek is a Prague-based hands-on technical lead and full-stack engineer with 14+ years of experience, strongest in Angular, React, Next.js, TypeScript and Node, with team leadership up to 15 people and enterprise, fintech and health-insurance domain experience. Since 2023 he uses AI coding agents daily in a governed, human-in-the-loop way, coached a fintech team on responsible AI adoption, and co-founded BridgeOS — a governed operating system for AI-assisted delivery with spec-driven builds and human ratification gates. Certified Kanban practitioner (KMP I). Currently full-time on AI-augmented product development: BridgeOS, an AI film studio, a RAG-powered journaling app, and an education platform with AI co-pilot. Open to technical lead roles, AI-delivery consulting, agile coaching, co-building products, or a conversation. Languages: Spanish and Czech native, English fluent.",
+    "goodFitSignals": [
+      "Teams adopting AI coding agents that want governance, accountability and human-in-the-loop practices, not just speed",
+      "Organisations wanting to introduce AI-assisted delivery responsibly, with coaching and change management",
+      "Small or mid-size team, high trust, decisions with reasons",
+      "Hands-on lead role: architecture, standards, and still writing code",
+      "Regulated or enterprise front-ends that must be clear to non-technical users",
+      "Products for real operators: venues, schools, hotels, construction sites, kids"
+    ],
+    "poorFitSignals": [
+      "Roles centred on reporting rather than building",
+      "Pure research with no shipping horizon",
+      "Places where the slide matters more than the product",
+      "Rewrites nobody is allowed to finish"
+    ],
+    "contact": "Email. Put the real question in the first line."
+  },
+  "tech": [
+    {
+      "group": "Front-end",
+      "items": [
+        "Angular",
+        "React 19",
+        "Next.js 16 (App Router)",
+        "TypeScript",
+        "JavaScript",
+        "Remix",
+        "StencilJS",
+        "Redux",
+        "Tailwind 4",
+        "HTML5",
+        "CSS / SASS",
+        "Angular Material",
+        "styled-components",
+        "Capacitor (iOS and Android)",
+        "WebGL",
+        "Vite",
+        "Webpack"
+      ]
+    },
+    {
+      "group": "Back-end and data",
+      "items": [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "Go",
+        "REST API design",
+        "Prisma",
+        "PostgreSQL",
+        "SQLite (WAL, AES-256-GCM)",
+        "Drizzle",
+        "FTS5 full-text search",
+        "PHP",
+        "Java",
+        "Grails / Groovy",
+        "Socket.IO",
+        "JWT / jose auth",
+        "SSE streaming"
+      ]
+    },
+    {
+      "group": "Delivery, agile and ops",
+      "items": [
+        "Scrum (practitioner and SM)",
+        "Kanban (KMP I certified)",
+        "Git / GitHub",
+        "Gitflow",
+        "CI/CD",
+        "Azure DevOps",
+        "Docker",
+        "AWS",
+        "DigitalOcean",
+        "Vultr",
+        "Caddy",
+        "Gitea (self-hosted)"
+      ]
+    },
+    {
+      "group": "AI and LLM engineering",
+      "items": [
+        "Claude Code (daily driver)",
+        "Claude API / Anthropic SDK",
+        "Multi-provider AI routing (Anthropic, Gemini, Grok)",
+        "Multi-agent orchestration (8-10 specialised agents)",
+        "RAG with FTS5 hybrid retrieval",
+        "On-device AI (Apple FoundationModels, Gemini Nano)",
+        "Local models (Ollama, LM Studio)",
+        "Spec-driven and architecture-driven builds",
+        "Human-in-the-loop ratification gates",
+        "Event-sourced AI governance ledger",
+        "Image and video generation pipelines",
+        "AI-assisted code review",
+        "Governed team AI adoption and coaching",
+        "Crisis detection and safety layers",
+        "Tapestry profiling engine"
+      ]
+    },
+    {
+      "group": "Testing",
+      "items": [
+        "Unit testing",
+        "React Testing Library",
+        "Cypress",
+        "Jasmine / Karma",
+        "Protractor",
+        "Vitest"
+      ]
+    },
+    {
+      "group": "Design and teaching",
+      "items": [
+        "UX / UI design",
+        "Design systems",
+        "Graphic design and print",
+        "Drupal",
+        "Scratch",
+        "Angular training"
+      ]
+    }
+  ],
+  "_studio": {
+    "name": "Bulding Bridges",
+    "wordmark": "BULDING BRIDGES",
+    "url": "https://buldingbridges.com",
+    "email": "reach@buldingbridges.com",
+    "tagline": "Software in service of people. Imperfect, like life.",
+    "intro": "The studio I co-founded in 2025. Small team, every decision has a face on it. The domain has a typo on purpose, because the first thing we agreed on was that we would not pretend to be bigger, smoother or more finished than we are.",
+    "myRole": "Sombrero loco. I do a bit of everything and connect the dots: between disciplines, between people, between ideas.",
+    "team": [
+      {
+        "name": "Denis",
+        "role": "Sombrero loco",
+        "bio": "A bit of everything. Connects the dots between disciplines, people and ideas."
+      },
+      {
+        "name": "Rene",
+        "role": "Product and architecture",
+        "bio": "Defines the principles and the direction. The voice that says 'looks simple, let's make it simple'."
+      },
+      {
+        "name": "Marcos",
+        "role": "Customer-facing",
+        "bio": "The one who sits down with an organiser and understands what they need."
+      },
+      {
+        "name": "Mauri",
+        "role": "DevOps",
+        "bio": "Makes the infrastructure purr: servers, networks, deployments, certificates."
+      },
+      {
+        "name": "Tom",
+        "role": "AI and IT consultant",
+        "bio": "TODO one sentence.",
+        "todo": true
+      }
+    ],
+    "ethos": [
+      {
+        "title": "If using us less serves you better, we want that.",
+        "body": "Software that protects you, not software that hooks you. No dark patterns, no surprise auto-renewals, no aggressive upsell. If the right call is to close us, we tell you how."
+      },
+      {
+        "title": "Only what the first customer needs.",
+        "body": "Before the pilot, nothing the pilot cannot demonstrate. Small-scope discipline keeps a product from turning into a Frankenstein of features nobody asked for."
+      },
+      {
+        "title": "Solid now, scalable later.",
+        "body": "Simple decisions today that do not block us tomorrow. Modular monolith until the product demands microservices. Clear tables before event sourcing. Complexity is earned, not assumed."
+      },
+      {
+        "title": "Transparent from the inside.",
+        "body": "Every action that moves money lands in an immutable ledger. Every architectural decision is written down. If we cannot show it to the customer, we do not build it."
+      }
+    ],
+    "firstProduct": {
+      "name": "EvenFlow",
+      "status": "Pilot with Casa Rene, 2026",
+      "one": "A closed-loop wallet for events: ticket, balance, loyalty and reconciliation in the same QR. The night is visible on one screen, and reconciliation closes when the bar closes.",
+      "deck": "eventflow-event-rene"
+    },
+    "stewardship": {
+      "status": "Working hypothesis, specialist pending, May 2026",
+      "body": "Built by its people, owned by its people, structurally protected from drift. A perpetual trust holds the majority and protects the ethos permanently, a cooperative gives the community real ownership with profit share and vote, a standard pool covers founders and team. Not a token, not a DAO, not a badge. Decided before the first equity issuance, because after is brutally hard."
+    }
+  }
+}
